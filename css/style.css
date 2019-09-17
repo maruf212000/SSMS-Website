@@ -1,0 +1,357 @@
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway',sans-serif;
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+body
+{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+    width: 100%;
+}
+.feat h1{
+    text-align: center;
+}  
+.feat
+{
+    font-family: consolas;
+    background-color: #fff;
+}
+.container
+{
+}
+.feat .container .card
+{
+    /*padding-left: 4%;
+    padding-right: 4%;*/
+    width: 33.33%;
+    float: left;
+}
+.container .card .face
+{
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+}
+.container .card .face.face1
+{
+    position: relative;
+    background: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    transform: translateY(100px);
+}
+.container .card:hover .face.face1
+{
+    background: #333;
+    transform: translateY(0);
+}
+.container .card .face.face2
+{
+    background: #fff;
+    padding: 20px;
+    position: relative;
+    background: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transform: translateY(-100px);
+}
+.container .card:hover .face.face2
+{
+    transform: translateY(0);
+}
+.container .card .face.face2 .content p{
+    margin: 0;
+    padding: 0; 
+}
+.container .card .face.face1 .content
+{
+    opacity: 0.8;
+    transition: 0.5s;
+}
+.container .card:hover .face.face1 .content
+{
+    opacity: 1;
+    color: #fff;
+}
+.container .card .face.face1 .content img{
+    display: block;
+    margin: auto;
+    padding-top: 20px;
+    max-width: 100px;
+}
+.container .card .face.face1 .content h3{
+    margin: 10px 0 0;
+    padding: 0;
+    text-align: center;
+    font-size: 1.5em;
+}
+.container:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+@media screen and (max-width: 768px)
+{
+    .feat .container .card
+    {
+        width: 100%;
+    }
+    .feat .container  .card .face
+    {
+        width: 90%;
+    }
+}
+@media screen and (width: 768px)
+{
+    .feat .container .card
+    {
+        width: 100%;
+    }
+    .feat .container  .card .face
+    {
+        width: 400px;
+    }
+}
+.about
+{
+  padding: 2% 7%;
+}
+.about p
+{
+  padding: 0.5% 0%;
+}
+.about-content
+{
+  text-align: justify;
+}
+.about img
+{
+  padding-left: 2%;
+  float: right;
+  width: 500px;
+  height: 250px;
+}
+/* Slider */
+.swiper {
+  background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
+  font-family: 'consolas','sans-serif';
+  font-size: 14px;
+  color:#000;
+  margin: 0;
+  padding: 0;
+  height: 430px;
+}
+.swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 320px;
+  height: 320px;
+  background: rgb(141,208,152);
+  text-align: center;
+}
+.swiper-slide .details
+{
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 310px;
+  opacity:1;
+  color: white;
+  font-size: 16px;
+  padding: 5px;
+  text-align: center;
+}
+.imgBx
+{
+width: 300px;
+height: 300px;
+}
+.swiper-slide img{
+  height: 300px;
+  padding-top:2%;
+}
+/*Contact*/
+input::-webkit-input-placeholder { color: #999999; font-weight: bold;}
+input:-moz-placeholder { color: #999999; }
+input::-moz-placeholder { color: #999999; }
+input:-ms-input-placeholder { color: #999999; font-weight: bold;}
+.con
+{
+  background-image: linear-gradient(180deg, #80ff72 10%, #7ee8fa 100%);
+  align-content: center;
+  padding: 5% 7% 0% 7%;
+}
+.m-container
+{
+  background-color: white;
+  border-radius: 20px;
+  height: auto;
+  text-align: center;
+  padding: 2% 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.m-container .m-img{
+  width: 100%;
+  padding-left: 10%;
+}
+.m-container .m-img img
+{
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.input-t
+{
+  outline: none;
+  margin: 10px;
+  height: 40px;
+  background-color:#e6e6e6;
+  border-radius: 20px;
+  border: none;
+  width: 60%;
+  font-size: 15px;
+  border-color: #e6e6e6;
+  color: #666666; 
+  padding: 0 30px;
+}
+.m-btn
+{
+  background-color: rgb(0, 131, 75);
+  margin: 0px;
+  width: 150px;
+  height: 60px;
+  border-radius: 25px;
+  padding: 1%;
+  border: none;
+  color: white;
+  font-size: 15px;
+  font-family: 'consolas',sans-serif;
+}
+.m-btn:hover{
+    background-color: grey;
+    cursor: pointer;
+}
+.input-t:focus
+{
+  -webkit-animation: anim-shadow 0.5s ease-in-out forwards;
+  animation: anim-shadow 0.5s ease-in-out forwards;
+}
+.svg-row
+{
+  background: linear-gradient(180deg, #7ee8fa 0% , #fff 100%);
+}
+@-webkit-keyframes anim-shadow {
+  99% {
+    box-shadow: 0 0 15px 5px rgba(0,255,0,.5);
+  }
+  100%
+  {
+    box-shadow: 0px 0px 0px 0px;
+  }
+}
+@keyframes anim-shadow {
+  99% {
+    box-shadow: 0 0 15px 5px rgba(0,255,0,.5);
+  }
+  100%
+  {
+    box-shadow: 0px 0px 0px 0px;
+  }
+}
+/*Footer*/  
+.footer
+{
+  padding: 0% 7%;
+  position: relative;
+}
+.footer .footer-section
+{
+  color: #000;
+  float: left;
+  width: 29%;
+  padding: 0% 2% 0% 2%;
+  text-align: left;
+}
+.footer-section a{
+  color: #000;
+  text-decoration: none;
+}
+.footer-section a:hover
+{
+  color: #686868;
+  cursor: pointer;
+  text-decoration: none;
+}
+.footer-section img
+{
+  margin-right: 10px;
+  height: 20px;
+  width: 20px;
+}
+.footer-bottom
+{
+  background: #2e2e2e;
+  color: #686868;
+  height: 30px;
+  text-align: center;
+  padding-top: 20px;
+  width: 100%;
+  float: left;
+}
+.footer .footer-section p{
+    padding: 10px;
+}
+@media screen and (max-width: 768px) {
+    
+    .about img
+    {
+        float: right;
+        margin: 0px 0px 15px 15px;
+        width: 52%;
+        height: auto;
+    }
+    .about
+    {
+        padding: 2% 4%;
+    }
+    .swiper-button-prev , .swiper-button-next
+    {
+        display: none;
+    }
+    .m-container .m-img
+    {
+       display: none;
+    }
+    .m-container
+    {
+      padding: 5% 0%;
+    }
+    .input-t
+    {
+      margin: 15px;
+    }
+  .footer .footer-section
+  {
+    width: 100%;
+    float: none;
+  }
+}

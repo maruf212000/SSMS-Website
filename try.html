@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html>
 <head>
   <title>SSMS Engineers</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
-  <link rel="stylesheet" href="css/try2.css">
+  <link rel="stylesheet" href="css/try.css">
   <link rel="apple-touch-icon" sizes="152x152" href="icon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
@@ -14,11 +14,19 @@
   <link rel="mask-icon" href="icon/safari-pinned-tab.svg" color="#5bbad5">
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
 </head>
 <body>
 <!-- Navigation -->
-<!--<nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
   <div class="container">
+        <!--<a class="navbar-brand" href="#">
+              </a>-->
     <a class="navbar-brand" href="#"><img src="img/logo.png" alt="" width="25%">SSMS Engineers</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -56,57 +64,30 @@
         </div>
   </div>-->
 </header>
-
-<div class="feat">
-    <h1>Key Features</h1>
-    <div class="container">
-        <div class="card">
-            <div class="face face1">
-                <div class="content">
-                    <img src="img/PP.png">
-                    <h3>Product Portfolio</h3>
-                </div>
-            </div>
-            <div class="face face2">
-                <div class="content">
-                        <p>Our organization is expertise in the filed of manufacturing suppling and exporting a comprehensive range of Pharma, Food and Chemical Machineries.</p>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-                <div class="face face1">
-                    <div class="content">
-                        <img src="img/Service.png">
-                        <h3>Service Experts</h3>
-                    </div>
-                </div>
-                <div class="face face2">
-                    <div class="content">
-                            <p>After sales service refers to various processes which make sure customers are satisfied with the products and services of the organization.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                    <div class="face face1">
-                        <div class="content">
-                            <img src="img/QA.png">
-                            <h3>Quality Assurance</h3>
-                        </div>
-                    </div>
-                    <div class="face face2">
-                        <div class="content">
-                                <p>The products, we supply, are as per the industry specifications and requirements. These products have ergonomic features that facilitate fast and streamlined production of industrial matter.</p>
-                        </div>
-                    </div>
-                </div>
+<div class="feat-row">
+  <h1 id="features">Key Features</h1>
+  <div class="feat-column">
+      <img src="img/PP.png" class="feat-img">
+      <h5>PRODUCT PORTFOLIO</h5>
+      <p>Our organization is expertise in the filed of manufacturing suppling and exporting a comprehensive range of Pharma, Food and Chemical Machineries.</p>
     </div>
+    <div class="feat-column">
+      <img src="img/Service.png" class="feat-img">
+      <h5>SERVICE EXPERTS</h5>
+      <p>After sales service refers to various processes which make sure customers are satisfied with the products and services of the organization.</p>
+    </div>
+    <div class="feat-column">
+        <img src="img/QA.png" class="feat-img">
+        <h5>QUALITY ASSURANCE</h5>
+        <p>The products, we supply, are as per the industry specifications and requirements. These products have ergonomic features that facilitate fast and streamlined production of industrial matter.</p>
+      </div>
     </div>
 
 <div class="about" id="about">
     <h1>About Us</h1>
     <div class="about-content">
         <img src="img/About.svg">
-      <p><span class="ffff">We, 'SSMS ENGINEERS', are engaged in manufacturing, supplying and </span>exporting superior qaulity Pharmaceutical, Food and Chemical Machineries. These products are used for various industrial applications such as treating, formulating or processing chemicals, water, effluents, oil & wax. The plants and machinery we offer are deisgn in such a way that these have ergonomic and user friendly features. Our products are in sync with international qaulity standards and tested as per the industrial guidelines.</p>
+      <p><span class="ffff">We, 'SSMS ENGINEERS', are engaged in manufacturing, supplying and </span>exporting superior qaulity Pharmaceutical, Food and Chemical Machineries.These products are used for various industrial applications such as treating, formulating or processing chemicals, water, effluents, oil & wax. The plants and machinery we offer are deisgn in such a way that these have ergonomic and user friendly features. Our products are in sync with international qaulity standards and tested as per the industrial guidelines.</p>
       <p>We have a well managed designing and manufacturing unit that facilitates cost effective production of our machinery. Over the years our transparent practices have earned us the trust of both domestic and global clients. Our organization has established a strong foothold in the industry under the able leadership of our mentors. SSMS Manufacturing facility spread in 3000 Sq Feet Area. </p>
     </div>
 </div>
@@ -201,7 +182,8 @@
 
     <div class="con">
       <div class="m-container">
-        <div class="m-img"><img src="img/Contact.png"></div>
+        <div class="m-center">
+        <img src="img/Contact.png"></div>
         <div>
         <form name="contact" method="POST" action="https://formspree.io/maruf.glsica@gmail.com">
           <h2>Get A Quotation</h2>
@@ -215,12 +197,13 @@
           </form>
           </div>
     </div>
+    </div>
 </div>
 <div class="svg-row">
-    <svg height="100%" viewBox="0 0 1600 180" class="svg-footer">
+    <svg width="100%" viewBox="0 0 1600 200" class="svg-footer">
         <polygon points="886,86 800,172 714,86 -4,86 -4,204 1604,204 1604,86" style="fill:#fff;" />
       </svg>
-</div> 
+</div>    
  <!--Footer-->
  <div class="footer">
    <div class="footer-content">
@@ -246,4 +229,4 @@
 </div>
  <!--Footer-->   
 </body>
-</html>
+</html
