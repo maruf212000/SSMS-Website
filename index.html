@@ -55,7 +55,39 @@
         <!--<img src="img/VibroSifter.png" alt="" height="75%"/>
         </div>
   </div>-->
+  <script>
+      function myFunction() {
+        var element = document.getElementById("myDIV");
+      
+        if (element.classList) { 
+          element.classList.toggle("active");
+        } else {
+          var classes = element.className.split(" ");
+          var i = classes.indexOf("active");
+      
+          if (i >= 0) 
+            classes.splice(i, 1);
+          else 
+            classes.push("active");
+            element.className = classes.join(" "); 
+        }
+      }
+      </script>
+  <section>
+    <header>
+      <div class="head-content">
+  <a href="index.html" class="logo"><img src="img/logo.png"></a>
+  <a href="index.html" class="heading">SSMS Engineers</a>
+  <button class="toggle" onclick="myFunction()">&#9776;</button>
+  <ul id="myDIV">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Products</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+  </div>
 </header>
+  </section>
 
 <div class="feat">
     <h1>Key Features</h1>
