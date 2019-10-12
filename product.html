@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="css/try.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/product.css">
         <link rel="apple-touch-icon" sizes="152x152" href="icon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
@@ -11,25 +12,174 @@
         <link rel="mask-icon" href="icon/safari-pinned-tab.svg" color="#5bbad5">
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
+        <script src="js/product.js"></script>
     </head>
-    <body>
-        <div class="feat-row">
-            <h1 id="features">Key Features</h1>
-            <div class="feat-column">
-                <img src="img/PP.png" class="feat-img">
-                <h5>PRODUCT PORTFOLIO</h5>
-                <p>Our organization is expertise in the filed of manufacturing suppling and exporting a comprehensive range of Pharma, Food and Chemical Machineries.</p>
+    <body  onload="openCity(event,'AutoCoater')">
+      <script>
+        function navbar() {
+          var element = document.getElementById("myNavSection");
+        
+          if (element.classList) { 
+            element.classList.toggle("active");
+          } else {
+            var classes = element.className.split(" ");
+            var i = classes.indexOf("active");
+        
+            if (i >= 0) 
+              classes.splice(i, 1);
+            else 
+              classes.push("active");
+              element.className = classes.join(" "); 
+          }
+        }
+        </script>
+      <header>
+        <div class="head-content">
+    <a href="index.html" class="logo"><img src="img/logo.png"></a>
+    <a href="index.html" class="heading">SSMS Engineers</a>
+    <button class="toggle" onclick="navbar()">&#9776;</button>
+    <ul id="myNavSection">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    </div>
+  </header>
+    <!--Product Tabs-->
+      <div class="tab">
+        <button class="tablinks defaultOpen" onclick="openCity(event, 'AutoCoater')">AutoCoater</button>
+        <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+      </div>
+      
+      <div id="AutoCoater" class="tabcontent">
+        <img src="img/AutoCoater.png" class="Img">
+        <div>
+        <h1>AutoCoater</h1>
+        <h3>Description</h3>
+        <p><span style="color:#00834B;">Auto Coater</span> is a range of advanced tablet coating systems which ensure the process of coating more efficient, reliable, flexible, user friendly and controllable. This high quality tablet coating system is designed for small volume to a large scale production size batches. Innovative science based continual developments in the all areas like tablet mixing, spraying systems, drying efficiency control, cleaning system and control system technology will guarantee a highly controlled process & ensuring the delivery of a high quality end product. </p>
+        <table>
+          <tr>
+            <th>Model</th>
+            <th>12"</th>
+            <th>24"</th>
+            <th>36"</th>
+            <th>48"</th>
+            <th>60"</th>
+          </tr>
+          <tr class="odd">
+            <td class="tit">Pan Diameter</td>
+            <td>300 mm</td>
+            <td>600 mm</td>
+            <td>900 mm</td>
+            <td>1220 mm</td>
+            <td>1520 mm</td>
+          </tr>
+          <tr class="even">
+              <td class="tit">Pan Opening</td>
+              <td>150 mm</td>
+              <td>250 mm</td>
+              <td>300 mm</td>
+              <td>475 mm</td>
+              <td>475 mm</td>
+          </tr>
+          <tr class="odd">
+              <td class="tit">Brime Volume</td>
+              <td>2 ltr.</td>
+              <td>27 ltr.</td>
+              <td>90 ltr.</td>
+              <td>150 ltr.</td>
+              <td>380 ltr.</td>
+          </tr>
+          <tr class="even">
+              <td class="tit">Working Volume(kg)</td>
+              <td>1 kg</td>
+              <td>15 kg</td>
+              <td>40 kg</td>
+              <td>90 kg</td>
+              <td>300 kg</td>
+          </tr>
+          <tr class="odd">
+            <td class="tit">No. of Buffies</td>
+            <td>3</td>
+            <td>4</td>
+            <td>4</td>
+            <td>6</td>
+            <td>8</td>
+          </tr>
+          <tr class="even">
+            <td class="tit">Pan Motor</td>
+            <td>1.5 Hp</td>
+            <td>2 Hp</td>
+            <td>3 Hp</td>
+            <td>5 Hp</td>
+            <td>7.5 Hp</td>
+          </tr>
+          <tr class="odd">
+            <td class="tit">Tablet Bed Depth</td>
+            <td>75 mm</td>
+            <td>175 mm</td>
+            <td>300 mm</td>
+            <td>365 mm</td>
+            <td>500 mm</td>
+          </tr>
+          <tr class="even">
+            <td class="tit">Comporessed Air</td>
+            <td>6 bar</td>
+            <td>6 bar</td>
+            <td>6 bar</td>
+            <td>6 bar</td>
+            <td>6 bar</td>
+          </tr>
+          <tr class="odd">
+            <td class="tit">Process air Volume CFM (M3/Hr.)</td>
+            <td>500(850)</td>
+            <td>1100(1800)</td>
+            <td>1500(2500)</td>
+            <td>2500(4200)</td>
+            <td>4500(7500)</td>
+          </tr>
+          <tr class="even">
+            <td class="tit">Drying Air Temperature(working)</td>
+            <td>40-85 &#8451;</td>
+            <td>40-85 &#8451;</td>
+            <td>40-85 &#8451;</td>
+            <td>40-85 &#8451;</td>
+            <td>40-85 &#8451;</td>
+          </tr>
+        </table>
+        </div>
+      </div>  <br>
+      <!--Footer-->
+      <section class="section-join">
+              <h2>GET IT NOW!</h2>
+          <br><br>
+          <div class="row"><p align="center"> Get your <b>free</b> trial access to the first class stocks prediction platform and improve your trading.<br><br><br><a class="btn btn-full" href="login.html">Get Quote</a></p><br><br><br><br><br>
               </div>
-              <div class="feat-column">
-                <img src="img/Service.png" class="feat-img">
-                <h5>SERVICE EXPERTS</h5>
-                <p>After sales service refers to various processes which make sure customers are satisfied with the products and services of the organization.</p>
-              </div>
-              <div class="feat-column">
-                  <img src="img/QA.png" class="feat-img">
-                  <h5>QUALITY ASSURANCE</h5>
-                  <p>The products, we supply, are as per the industry specifications and requirements. These products have ergonomic features that facilitate fast and streamlined production of industrial matter.</p>
-                </div>
-              </div>
+      </section>
+ <div class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+          <h3>SSMS Engineers</h3><hr style="background: #00834B;">
+          <p>Business is about people and relationships. That is why we try to outperform ourselves every time.</p>
+      </div>
+      <div class="footer-section">
+       <h3>Contact Info</h3><hr style="background: #00834B;">
+       <p><a href="https://goo.gl/maps/Dmpwd46gJQGh7ZmB9" target="blank"><img src="img/location.png">71, Parishram Industrail Estate, Nr. Jantanagar, CTM - Ramol Rd, Ramol, Ahmedabad-382449, Gujarat, India</a></p>
+       <p><a href="mailto: ssmsenginners@gmail.com"><img src="img/mail.png">ssmsengineers@gmail.com</a></p>
+       <p><img src="img/call.png">+91-9924688786 / +91-9727792615</p>
+     </div>
+    </div>
+      <div class="footer-section">
+        <h3>Useful Links</h3><hr style="background: #00834B;">
+        <p><a href="#">Products</a></p>
+        <p><a href="#features">Features</a></p>
+      </div>
+  </div>
+  <div class="footer-bottom">
+   Copyright &copy; 2019 ssmsengineers.com | All rights reserved | Designed & Developed by MM
+ </div>
+  <!--Footer-->   
     </body>
 </html>

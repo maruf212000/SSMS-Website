@@ -16,48 +16,9 @@
 <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-<!-- Navigation -->
-<!--<nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
-  <div class="container">
-    <a class="navbar-brand" href="#"><img src="img/logo.png" alt="" width="25%">SSMS Engineers</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Products</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-<div class="page-wrapper">
-<!-- Full Page Image Header with Vertically Centered Content 
-<header class="masthead">
-  <div class="container h-100">
-    <div class="row h-100 align-items-center">
-      <div class="col-12 text-center slidedown">
-        <h1 class="font-weight text-white">Always deliver more than <span class="text-success">expected</span></h1>
-        <p class="lead font-weight-bold text-white">Our machine, work for your dreams</p>
-      </div>
-    </div>
-    <div class="slideimg autocoater">
-        <!--<img src="img/VibroSifter.png" alt="" height="75%"/>
-        </div>
-  </div>-->
   <script>
-      function myFunction() {
-        var element = document.getElementById("myDIV");
+      function navbar() {
+        var element = document.getElementById("myNavSection");
       
         if (element.classList) { 
           element.classList.toggle("active");
@@ -73,13 +34,12 @@
         }
       }
       </script>
-  <section>
     <header>
       <div class="head-content">
   <a href="index.html" class="logo"><img src="img/logo.png"></a>
   <a href="index.html" class="heading">SSMS Engineers</a>
-  <button class="toggle" onclick="myFunction()">&#9776;</button>
-  <ul id="myDIV">
+  <button class="toggle" onclick="navbar()">&#9776;</button>
+  <ul id="myNavSection">
     <li><a href="#">Home</a></li>
     <li><a href="#">About</a></li>
     <li><a href="#">Products</a></li>
@@ -87,7 +47,6 @@
   </ul>
   </div>
 </header>
-  </section>
 
 <div class="feat">
     <h1>Key Features</h1>
