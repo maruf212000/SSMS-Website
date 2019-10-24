@@ -5,6 +5,7 @@ html {
     height: 100%;
     width: 100%;
     scroll-behavior: smooth;
+    font-size: 2.5vh;
 }
 body
 {
@@ -107,8 +108,8 @@ header .toggle
 }
 .container .card .face
 {
-    width: 300px;
-    height: 200px;
+    width: 50vh;
+    height: 300px;
     transition: 0.5s;
 }
 .container .card .face.face1
@@ -118,7 +119,7 @@ header .toggle
     margin-left: auto;
     margin-right: auto;
     z-index: 1;
-    transform: translateY(100px);
+    transform: translateY(150px);
 }
 .container .card:hover .face.face1
 {
@@ -135,7 +136,7 @@ header .toggle
     margin-right: auto;
     box-sizing: border-box;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
-    transform: translateY(-100px);
+    transform: translateY(-150px);
 }
 .container .card:hover .face.face2
 {
@@ -149,6 +150,7 @@ header .toggle
 {
     opacity: 0.8;
     transition: 0.5s;
+    padding-top: 4vh;
 }
 .container .card:hover .face.face1 .content
 {
@@ -231,14 +233,18 @@ header .toggle
 }
 .about-content
 {
+  font-size: 2.5vh;
   text-align: justify;
+}
+.about h1
+{
+  font-size: 5vh;;
 }
 .about img
 {
   padding-left: 2%;
   float: right;
-  width: 500px;
-  height: 250px;
+  width: 50vh;
 }
 /* Slider */
 .swiper {
@@ -258,7 +264,7 @@ header .toggle
 .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 320px;
+  width: 34vh;
   height: 320px;
   background: rgb(141,208,152);
   text-align: center;
