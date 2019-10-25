@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="css/try.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/Animate.css">
         <link rel="stylesheet" href="css/product.css">
         <link rel="apple-touch-icon" sizes="152x152" href="icon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
@@ -14,7 +15,7 @@
         <meta name="theme-color" content="#ffffff">
         <script src="js/product.js"></script>
     </head>
-    <body  onload="openCity(event,'AutoCoater')">
+    <body  onload="openTab(event,'AutoCoater')">
       <script>
         function navbar() {
           var element = document.getElementById("myNavSection");
@@ -48,17 +49,24 @@
   </header>
     <!--Product Tabs-->
       <div class="tab">
-        <button class="tablinks defaultOpen" onclick="openCity(event, 'AutoCoater')">AutoCoater</button>
-        <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+        <button class="tablinks defaultOpen" onclick="openTab(event, 'AutoCoater')">AutoCoater</button>
+        <button class="tablinks" onclick="openTab(event, 'Sifter')">Sifter</button>
+        <button class="tablinks" onclick="openTab(event, 'Paste Kettle')">Paste Kettle</button>
+        <button class="tablinks" onclick="openTab(event, 'RMG')">Rapid Mixture Granulator</button>
+        <button class="tablinks" onclick="openTab(event, 'FBD')">Fluid Bed Dryer</button>
+        <button class="tablinks" onclick="openTab(event, 'Multi Mill')">Multi Mill</button>
+        <button class="tablinks" onclick="openTab(event, 'Blender')">Blender</button>
+        <button class="tablinks" onclick="openTab(event, 'Coating Pan')">Coating Pan</button>
+        <button class="tablinks" onclick="openTab(event, 'Tray Dryer')">Tray Dryer</button>
+        <button class="tablinks" onclick="openTab(event, 'Mass Mixer')">Mass Mixer</button>
       </div>
       
       <div id="AutoCoater" class="tabcontent">
-        <img src="img/AutoCoater.png" class="Img">
+        <img src="img/AutoCoater.png" class="Img animated bounceInUp yourElement">
         <div>
         <h1>AutoCoater</h1>
         <h3>Description</h3>
-        <p><span style="color:#00834B;">Auto Coater</span> is a range of advanced tablet coating systems which ensure the process of coating more efficient, reliable, flexible, user friendly and controllable. This high quality tablet coating system is designed for small volume to a large scale production size batches. Innovative science based continual developments in the all areas like tablet mixing, spraying systems, drying efficiency control, cleaning system and control system technology will guarantee a highly controlled process & ensuring the delivery of a high quality end product. </p>
+        <p style="font-size:2.4vh;"><span style="color:#00834B;">Auto Coater</span> is a range of advanced tablet coating systems which ensure the process of coating more efficient, reliable, flexible, user friendly and controllable. This high quality tablet coating system is designed for small volume to a large scale production size batches. Innovative science based continual developments in the all areas like tablet mixing, spraying systems, drying efficiency control, cleaning system and control system technology will guarantee a highly controlled process & ensuring the delivery of a high quality end product. </p>
         <table>
           <tr>
             <th>Model</th>
@@ -150,7 +158,516 @@
           </tr>
         </table>
         </div>
-      </div>  <br>
+      </div>
+      <div id="Sifter" class="tabcontent">
+        <img src="img/VibroSifter.png" class="Img">
+         <div>
+           <h1>Sifter</h1>
+          <h3>Description</h3>
+          <p><span style="color:#00834B;">Sifter</span>  with Vacuum Rated design & can be used for manual loading as well as inline sifting process with the help of Pneumatic Conveying System. With same Sifter, we can use for IPC Loading with inline sifting OR RMG Loading with inline sifting process OR as customized application.</p>
+          <table>
+            <tr>
+              <th>Model</th>
+              <th>12"</th>
+              <th>20"</th>
+              <th>30"</th>
+              <th>36</th>
+              <th>48</th>
+            </tr>
+            <tr clas="odd">
+              <td class="tit">Motor HP</td>
+              <td>0.25</td>
+              <td>0.5</td>
+              <td>1.0</td>
+              <td>1.5</td>
+              <td>2</td>
+            </tr>
+            <tr class="even">
+              <td class="tit">RPM</td>
+              <td>1440</td>
+              <td>1440</td>
+              <td>1440</td>
+              <td>1440</td>
+              <td>1440</td>
+            </tr>
+            <tr class="odd">
+              <td class="tit">Screen Dia.</td>
+              <td>280 mm</td>
+              <td>550 mm</td>
+              <td>750 mm</td>
+              <td>915 mm</td>
+              <td>1220 mm</td>
+            </tr>
+            <tr class="even">
+              <td class="tit">Net Wt.</td>
+              <td>80 Kg</td>
+              <td>130 Kg</td>
+              <td>160 Kg</td>
+              <td>190 Kg</td>
+              <td>250 Kg</td>
+            </tr>
+            <tr class="odd">
+              <td class="tit">Control</td>
+              <td>DOL</td>
+              <td>DOL</td>
+              <td>DOL</td>
+              <td>DOL</td>
+              <td>DOL</td>
+            </tr>
+            <tr class="even">
+              <td class="tit">Output in Kg/Hr.</td>
+              <td>up to 40</td>
+              <td>up to 100</td>
+              <td>up to 200</td>
+              <td>up to 300</td>
+              <td>up to 450</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div id="Paste Kettle" class="tabcontent">
+        <img src="img/Paste_Kettle.png" class="img">
+        <div>
+          <h1>Paste Kettle</h1>
+          <h3>Description</h3>
+          <p><span style="color:#00834B;">The tilting paste kettle</span>, is designed for paste preparation. It has a universal application resulting in uniform melting. This tank is designed to meet missing needs of wider range of products under varied operating conditions in Chemicals, Foods, Cosmetics and Pharmaceutical Industry. The basic principle utilized in the design of this kettle is the jacket for passing steam in order to melt down the product to make paste. This kettle has an unique tilting arrangement for discharging the product.</p>
+          <table>
+            <tr>
+              <th>Model</th>
+              <th>25 LTR</th>
+              <th>50 LTR</th>
+              <th>100 LTR</th>
+              <th>150 LTR</th>
+            </tr>
+            <tr class="odd">
+              <td class="tit">Motor HP</td>
+              <td>0.5</td>
+              <td>0.5</td>
+              <td>1</td>
+              <td>2</td>
+            </tr>
+            <tr class="even">
+              <td class="tit">Heater KW</td>
+              <td>2</td>
+              <td>3</td>
+              <td>5</td>
+              <td>6</td>
+            </tr>
+            <tr class="odd">
+              <td class="tit">Design Type</td>
+              <td>Movable</td>
+              <td>Movable</td>
+              <td>Fix</td>
+              <td>Fix</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div id="RMG" class="tabcontent">
+        <img src="img/RMG.png" class="Img">
+        <div>
+          <h1>Rapid Mixture Granulator</h1>
+          <h3>Description</h3>
+          <p><span style="color:#00834B;">Rapid mixer granulator</span> having a three blade impeller design for better dry mixing of powder and proper wet mixing of Binder & Powder. Specially designed main drive Impeller shaft with Air purging facility to prevent the entry of powder in to Bottom fame of machine at Gear box section. Pneumatically operated discharge valve is positioned at bottom portion of Mixing Bowl to ensure the proper discharge.</p>
+          <table>
+            <tr>
+              <th>Model</th>
+              <th>RMG-25</th>
+              <th>RMG-50</th>
+              <th>RMG-100</th>
+              <th>RMG-150</th>
+              <th>RMG-250</th>
+              <th>RMG-400</th>
+              <th>RMG-600</th>
+            </tr>
+            <tr class="odd">
+              <td class="tit">Gross Capacity - Ltrs.</td>
+              <td>25</td>
+              <td>50</td>
+              <td>100</td>
+              <td>150</td>
+              <td>250</td>
+              <td>400</td>
+              <td>600</td>
+            </tr>
+            <tr class="even">
+              <td class="tit">Working Capacity -Ltrs. </td>
+              <td>20</td>
+              <td>40</td>
+              <td>80</td>
+              <td>120</td>
+              <td>200</td>
+              <td>320</td>
+              <td>480</td>
+            </tr>
+            <tr class="odd">
+              <td class="tit">Impeller Motor - Hp</td>
+              <td>3 / 5</td>
+              <td>5 / 7.5</td>
+              <td>7.5 / 10</td>
+              <td>10 / 15</td>
+              <td>25 / 30</td>
+              <td>30 / 40</td>
+              <td>40 / 50</td>
+            </tr>
+            <tr class="even">
+              <td class="tit">Chopper Motor - HP</td>
+              <td>1.5 / 2</td>
+              <td>2 / 3</td>
+              <td>2 / 3</td>
+              <td>3 / 5</td>
+              <td>3 / 5</td>
+              <td>5 / 7.5</td>
+              <td>5 / 7.5</td>
+            </tr>
+            <tr class="odd">
+              <td class="tit">Gear Box Ratio</td>
+              <td>5:1</td>
+              <td>5:1</td>
+              <td>10:1</td>
+              <td>10:1</td>
+              <td>10:1</td>
+              <td>10:1</td>
+              <td>10:1</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div id="FBD" class="tabcontent">
+        <img src="img/FBD.png" class="Img">
+        <div>
+          <h1>Fluid Bed Dryer</h1>
+          <h3>Description</h3>
+          <p><span style="color: #00834B;">Fluid Bed Dryer </span>are used for drying the pharmaceutical wet granules, & powder specially used in solid dosage technology. Fluid Bed Dryer is manufactured in modular construction primarily consist of a Fluidized Bed Chamber, Product Container, Inlet Air Handling Unit, Exhaust Air Unit  Ducting as per the customized requirement. Which can lead to flexible and user friendly installation alternatives as per the customer requirement.</p>
+          <table>
+            <tr>
+              <th>Model</th>
+              <th>FBD-30</th>
+              <th>FBD-60</th>
+              <th>FBD-120</th>
+              <th>FBD-150</th>
+              <th>FBD-200</th>
+              <th>FBD-250</th>
+              <th>FBD-300</th>
+            </tr>
+            <tr class="odd">
+              <td class="tit">Gross Capacity -Ltrs. </td>
+              <td>100</td>
+              <td>195</td>
+              <td>425</td>
+              <td>475</td>
+              <td>625</td>
+              <td>725</td>
+              <td>1000</td>
+            </tr>
+            <tr class="even">
+              <td class="tit">Working Capacity -Ltrs. </td>
+              <td>60</td>
+              <td>115</td>
+              <td>255</td>
+              <td>285</td>
+              <td>375</td>
+              <td>435</td>
+              <td>600</td>
+            </tr>
+            <tr class="odd">
+              <td class="tit">Blower Motor -HP for 20,<br> 5 & 0.3 micron Air Filter</td>
+              <td>7.5</td>
+              <td>15</td>
+              <td>20</td>
+              <td>20</td>
+              <td>25</td>
+              <td>30</td>
+              <td>40</td>
+            </tr>
+            <tr class="even">
+              <td class="tit">Steam Consumption<br> at 3-4Kg/cm<sup>2</sup> Pressure</td>
+              <td>75-85</td>
+              <td>150-160</td>
+              <td>200-215</td>
+              <td>255-240</td>
+              <td>250-265</td>
+              <td>275-300</td>
+              <td>300-325</td>
+            </tr>
+            <tr class="odd">
+              <td class="tit">Electrical Heater <br>Capacity - HP</td>
+              <td>18</td>
+              <td>36</td>
+              <td>42</td>
+              <td>48</td>
+              <td>N.A.</td>
+              <td>N.A.</td>
+              <td>N.A.</td>
+            </tr>
+          </table>
+        </div>
+      </div>  
+      <div id="Multi Mill" class="tabcontent">
+        <img src="img/Co-Mill.png" class="Img">
+        <div>
+          <h1>Multi Mill</h1>
+          <h3>Description</h3>
+          <p><span style="color: #00834B;">Multi Mill </span>can be used for milling of dry & wet material. Mill is suitable for size reduction of particles. Multi mill impeller is with forward & reverse direction drive as inbuilt features. Loading and Unloading of material will be done manually.</p>
+          <table>
+            <tr>
+              <th></th>
+              <th>Lab Co Mill</th>
+              <th>Production Co Mill</th>
+              <th>Standard Multi Mill</th>
+            </tr>
+            <tr class="odd">
+              <td class="tit">Output</td>
+              <td>Upto 50 Kg/Hr.</td>
+              <td>Upto 500 Kg/Hr.</td>
+              <td>Upto 300 Kg/Hr.</td>
+            </tr>
+            <tr class="even">
+              <td class="tit">Impeller Design</td>
+              <td>Conical / Blade</td>
+              <td>Conical / Blade</td>
+              <td>Blade</td>
+            </tr>
+            <tr class="odd">
+              <td class="tit">Motor HP</td>
+              <td>1</td>
+              <td>5</td>
+              <td>3</td>
+            </tr>
+            <tr class="even">
+              <td class="tit">Speed Control</td>
+              <td>VIA VBD</td>
+              <td>VIA VBD</td>
+              <td>VIA BELT DRIVE</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div id="Blender" class="tabcontent">
+        <img src="img/b" class="Img">
+        <div>
+          <h1>Blender</h1>
+          <h3>Description</h3>
+          <p><span style="color: #00834B;">Blender</span></p>
+          <table>
+            <tr>
+              <th>type of Blender</th>
+              <th>Capacity</th>
+            </tr>
+            <tr class="odd">
+              <td class="tit">Octagonal Blender</td>
+              <td>2.5 Kg to 5000 Kg.</td>
+            </tr>
+            <tr class="even">
+              <td class="tit">Conta Blender</td>
+              <td>2.5 Kg to 5000 Kg.</td>
+            </tr>
+            <tr class="odd">
+              <td class="tit">Double Cone Blender</td>
+              <td>2.5 Kg to 5000 Kg.</td>
+            </tr>
+            <tr class="even">
+              <td class="tit">V-Blender</td>
+              <td>2.5 Kg to 5000 Kg.</td>
+            </tr>
+            <tr class="odd">
+              <td class="tit">Bin Blender</td>
+              <td>2.5 Kg to 5000 Kg.</td>
+            </tr>
+            <tr class="even">
+              <td class="tit">Cage Blender</td>
+              <td>2.5 Kg to 5000 Kg.</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="tabcontent" id="Coating Pan">
+        <img src="img/Coating.png" class="Img">
+        <div>
+          <h1>Coating Pan</h1>
+          <h3>Description</h3>
+          <p><span style="color: #00834B;">Coating Pan</span></p>
+          <table>
+            <tr>
+              <th>Model</th>
+              <th>12"</th>
+              <th>24"</th>
+              <th>30"</th>
+              <th>36"</th>
+              <th>42"</th>
+              <th>48"</th>
+              <th>60"</th>
+              <th>72"</th>
+            </tr>
+            <tr class="odd">
+              <td class="tit">Loading Capacity in Kg. </td>
+              <td>18</td>
+              <td>30</td>
+              <td>45</td>
+              <td>80</td>
+              <td>100</td>
+              <td>150</td>
+              <td>210</td>
+              <td>275</td>
+            </tr>
+            <tr class="even">
+              <td class="tit">Motor Hp</td>
+              <td>0.5</td>
+              <td>1</td>
+              <td>1.5</td>
+              <td>1.5</td>
+              <td>2.0</td>
+              <td>2.0</td>
+              <td>5.0</td>
+              <td>5.0</td>
+            </tr>
+            <tr class="odd">
+              <td class="tit">RPM of Pan</td>
+              <td>12-30</td>
+              <td>12-30</td>
+              <td>12-30</td>
+              <td>12-30</td>
+              <td>10-25</td>
+              <td>10-25</td>
+              <td>10-14</td>
+              <td>8-12</td>
+            </tr>
+            <tr class="even">
+              <td class="tit">Blower Motor HP</td>
+              <td>0.25</td>
+              <td>0.5</td>
+              <td>0.5</td>
+              <td>0.5</td>
+              <td>0.5</td>
+              <td>0.5</td>
+              <td>1.0</td>
+              <td>1.0</td>
+            </tr>
+            <tr class="odd">
+              <td class="tit">Maximum CFM </td>
+              <td>90</td>
+              <td>90</td>
+              <td>90</td>
+              <td>90</td>
+              <td>90</td>
+              <td>90</td>
+              <td>150</td>
+              <td>150</td>
+            </tr>
+            <tr class="even">
+              <td class="tit">Pan mounting Angle</td>
+              <td>30</td>
+              <td>30</td>
+              <td>30</td>
+              <td>30</td>
+              <td>30</td>
+              <td>30</td>
+              <td>30</td>
+              <td>30</td>
+            </tr>
+            <tr class="odd">
+              <td class="tit">Heater Capacity in KW</td>
+              <td>1</td>
+              <td>1</td>
+              <td>2</td>
+              <td>4</td>
+              <td>6</td>
+              <td>8</td>
+              <td>12</td>
+              <td>18</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="tabcontent" id="Tray Dryer">
+        <img src="" class="Img">
+        <div>
+          <h1>Tray Dryer</h1>
+          <h3>Description</h3>
+          <p><span style="color: #00834B;">Tray Dryer</span></p>
+          <table>
+            <tr>
+              <th>Model</th>
+              <th>12"</th>
+              <th>48"</th>
+              <th>96"</th>
+            </tr>
+            <tr class="odd">
+              <td class="tit">Number of Trays</td>
+              <td>24</td>
+              <td>48</td>
+              <td>96</td>
+            </tr>
+            <tr class="even">
+              <td class="tit">Loading Capacity</td>
+              <td>60 Kg.</td>
+              <td>120 Kg.</td>
+              <td>240 Kg.</td>
+            </tr>
+            <tr class="odd">
+              <td class="tit">Blower Motor HP</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1x2 Nos.</td>
+            </tr>
+            <tr class="even">
+              <td class="tit">Electrical Heating Load for 100 c</td>
+              <td>6 kW</td>
+              <td>9 kW</td>
+              <td>18 kW</td>
+            </tr>
+            <tr class="odd">
+              <td class="tit">No. of Trolleys</td>
+              <td>Rack System</td>
+              <td>1</td>
+              <td>2</td>
+            </tr>
+            <tr class="even">
+              <td class="tit">Tray Size in cm</td>
+              <td>80 X 40 X 3</td>
+              <td>80 X 40 X 3</td>
+              <td>80 X 40 X 3</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="tabcontent" id="Mass Mixer">
+        <img src="" class="Img">
+        <div>
+          <h1>Mass Mixer></h1>
+          <h3>Description</h3>
+          <p><span style="color: #00834B;">Mass Mixer</span></p>
+          <table>
+            <tr>
+              <th>Model</th>
+              <th>25 Kg</th>
+              <th>50 Kg</th>
+              <th>100 Kg</th>
+              <th>150 Kg</th>
+              <th>200 Kg</th>
+              <th>500 Kg</th>
+            </tr>
+            <tr class="odd">
+              <td class="tit">Motor HP</td>
+              <td>2</td>
+              <td>3</td>
+              <td>5</td>
+              <td>5</td>
+              <td>7.5</td>
+              <td>14</td>
+            </tr>
+            <tr class="even">
+              <td class="tit">Gear Box</td>
+              <td>3 NU</td>
+              <td>4 NU</td>
+              <td>4 NU</td>
+              <td>5 NU</td>
+              <td>5 NU</td>
+              <td>10 NU</td>
+            </tr>
+          </table>
+        </div>
+      </div>
       <!--Footer-->
       <section class="section-join">
               <h2>GET IT NOW!</h2>
