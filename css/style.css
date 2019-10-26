@@ -264,7 +264,7 @@ header .toggle
 .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 34vh;
+  width: 310px;
   height: 320px;
   background: rgb(141,208,152);
   text-align: center;
