@@ -16,38 +16,32 @@
 <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-  <script>
-      function navbar() {
-        var element = document.getElementById("myNavSection");
-      
-        if (element.classList) { 
-          element.classList.toggle("active");
-        } else {
-          var classes = element.className.split(" ");
-          var i = classes.indexOf("active");
-      
-          if (i >= 0) 
-            classes.splice(i, 1);
-          else 
-            classes.push("active");
-            element.className = classes.join(" "); 
-        }
-      }
-      </script>
-    <header>
-      <div class="head-content">
-  <a href="index.html" class="logo"><img src="img/logo.png"></a>
-  <a href="index.html" class="heading">SSMS Engineers</a>
-  <button class="toggle" onclick="navbar()">&#9776;</button>
-  <ul id="myNavSection">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="product.html">Products</a></li>
-    <li><a href="#">Contact</a></li>
-  </ul>
-  </div>
-</header>
-
+        <div class="nav" style="z-index: 3;">
+                <input type="checkbox" id="nav-check">
+                <div class="nav-header">
+                  <img src="img/logo.png" style="height: 60px;float: left; padding-top: 2px;">
+                  <div class="nav-title">
+                    SSMS Engineers
+                  </div>
+                </div>
+                <div class="nav-btn">
+                  <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </label>
+                </div>
+                
+                <div class="nav-links">
+                  <a href="index.html">Home</a>
+                  <a href="">About</a>
+                  <a href="product.html">Products</a>
+                  <a href="">Contact</a>
+                </div>
+              </div>
+              <div class="l section">
+                    afasdad
+                  </div>
 <div class="feat">
     <h1>Key Features</h1>
     <div class="container">
