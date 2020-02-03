@@ -41,6 +41,7 @@
           </div>
         </header>
     <!--Product Tabs-->
+    <div style="overflow: hidden;">
       <div class="tab">
         <button class="tablinks defaultOpen" onclick="openTab(event, 'AutoCoater')">AutoCoater</button>
         <button class="tablinks" onclick="openTab(event, 'Sifter')">Sifter</button>
@@ -53,9 +54,22 @@
         <button class="tablinks" onclick="openTab(event, 'Tray Dryer')">Tray Dryer</button>
         <button class="tablinks" onclick="openTab(event, 'Mass Mixer')">Mass Mixer</button>
       </div>
-      
+      <div>
+        <select onchange="openTab(event, this.value)" class="drop">
+          <option value="AutoCoater">AutoCoater</option>
+          <option value="Sifter">Sifter</option>
+          <option value="Paste Kettle">Paste Kettle</option>
+          <option value="RMG">RMG</option>
+          <option value="FBD">FBD</option>
+          <option value="Multi Mill">Multi Mill</option>
+          <option value="Blender">Blender</option>
+          <option value="Coating Pan">Coating Pan</option>
+          <option value="Tray Dryer">Tray Dryer</option>
+          <option value="Mass Mixer">Mass Mixer</option>
+        </select>
+      </div>
       <div id="AutoCoater" class="tabcontent">
-        <img src="img/AutoCoater.png" class="Img animated bounceInUp yourElement">
+        <img src="img/AutoCoater.png" class="Img animated rubberBand yourElement">
         <div>
         <h1>AutoCoater</h1>
         <h3>Description</h3>
@@ -153,7 +167,7 @@
         </div>
       </div>
       <div id="Sifter" class="tabcontent">
-        <img src="img/VibroSifter.png" class="Img animated bounceInUp yourElement">
+        <img src="img/VibroSifter.png" class="Img animated rubberBand yourElement">
          <div>
            <h1>Sifter</h1>
           <h3>Description</h3>
@@ -219,7 +233,7 @@
         </div>
       </div>
       <div id="Paste Kettle" class="tabcontent">
-        <img src="img/Paste_Kettle.png" class="img">
+        <img src="img/Paste_Kettle.png" class="img animated rubberBand yourElement">
         <div>
           <h1>Paste Kettle</h1>
           <h3>Description</h3>
@@ -257,7 +271,7 @@
         </div>
       </div>
       <div id="RMG" class="tabcontent">
-        <img src="img/RMG.png" class="Img">
+        <img src="img/RMG.png" class="Img animated rubberBand yourElement">
         <div>
           <h1>Rapid Mixture Granulator</h1>
           <h3>Description</h3>
@@ -327,7 +341,7 @@
         </div>
       </div>
       <div id="FBD" class="tabcontent">
-        <img src="img/FBD.png" class="Img">
+        <img src="img/FBD.png" class="Img animated rubberBand yourElement">
         <div>
           <h1>Fluid Bed Dryer</h1>
           <h3>Description</h3>
@@ -397,7 +411,7 @@
         </div>
       </div>  
       <div id="Multi Mill" class="tabcontent">
-        <img src="img/Co-Mill.png" class="Img">
+        <img src="img/Co-Mill.png" class="Img animated rubberBand yourElement">
         <div>
           <h1>Multi Mill</h1>
           <h3>Description</h3>
@@ -437,7 +451,7 @@
         </div>
       </div>
       <div id="Blender" class="tabcontent">
-        <img src="img/b" class="Img">
+        <img src="img/b" class="Img animated rubberBand yourElement">
         <div>
           <h1>Blender</h1>
           <h3>Description</h3>
@@ -475,7 +489,7 @@
         </div>
       </div>
       <div class="tabcontent" id="Coating Pan">
-        <img src="img/Coating.png" class="Img">
+        <img src="img/Coating.png" class="Img animated rubberBand yourElement">
         <div>
           <h1>Coating Pan</h1>
           <h3>Description</h3>
@@ -573,7 +587,7 @@
         </div>
       </div>
       <div class="tabcontent" id="Tray Dryer">
-        <img src="" class="Img">
+        <img src="" class="Img animated rubberBand yourElement">
         <div>
           <h1>Tray Dryer</h1>
           <h3>Description</h3>
@@ -625,9 +639,9 @@
         </div>
       </div>
       <div class="tabcontent" id="Mass Mixer">
-        <img src="" class="Img">
+        <img src="" class="Img animated rubberBand yourElement">
         <div>
-          <h1>Mass Mixer></h1>
+          <h1>Mass Mixer</h1>
           <h3>Description</h3>
           <p><span style="color: #00834B;">Mass Mixer</span></p>
           <table>
@@ -661,6 +675,7 @@
           </table>
         </div>
       </div>
+    </div>  
       <!--Footer-->
       <section class="section-join">
               <h2>GET IT NOW!</h2>

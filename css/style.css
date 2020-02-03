@@ -256,7 +256,7 @@ header .toggle
 {
     opacity: 0.8;
     transition: 0.5s;
-    padding-top: 4vh;
+    padding-top: 45px;
 }
 .container .card:hover .face.face1 .content
 {
@@ -280,8 +280,18 @@ header .toggle
     display: table;
     clear: both;
   }
-@media screen and (max-width: 768px)
+@media screen and (max-width: 767px)
 {
+  .container .card .face.face2 .content p
+  {
+    font-size: 3.5vh;
+  }
+  .container .card .face.face1 .content
+{
+    opacity: 0.8;
+    transition: 0.5s;
+    padding-top: 45px;
+}
     .feat .container .card
     {
         width: 100%;
@@ -328,6 +338,12 @@ header .toggle
     {
         width: 400px;
     }
+    .container .card .face.face1 .content img{
+    }
+}
+@media screen and (max-width: 1024px)
+{
+  
 }
 .about
 {
