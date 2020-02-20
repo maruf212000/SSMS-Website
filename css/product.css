@@ -242,7 +242,7 @@ h1
 {
     padding: 2% 2% 2% 2%;
     float: left;
-    height: 700px;
+    height: 35em;
 }
 .tabcontent p{
     padding: 0% 2% 2% 2%;
@@ -331,7 +331,7 @@ h1
 }
 .section-join {
     /*background-image: url(img/join.jpg);*/
-    background:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('https://source.unsplash.com/-fGqsewtsJY/1920x1080');/*sVothhm7iRI*/
+    background:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('../img/pro_bg.jpg');/*sVothhm7iRI,https://source.unsplash.com/-fGqsewtsJY/1920x1080*/
     background-size: cover;
     color: aliceblue;
     justify-content: center;
@@ -353,14 +353,13 @@ h1
 }
 .footer
 {
-  padding: 0% 7%;
-  position: relative;
+  padding: 0% 2%;
 }
 .footer .footer-section
 {
   color: #000;
   float: left;
-  width: 29%;
+  width: 33%;
   padding: 0% 2% 0% 2%;
   text-align: left;
 }

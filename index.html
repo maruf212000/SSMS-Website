@@ -6,7 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/Animate.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery-3.3..1.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
   <link rel="apple-touch-icon" sizes="152x152" href="icon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
@@ -34,18 +37,33 @@
                 
                 <div class="nav-links">
                   <a href="index.html">Home</a>
-                  <a href="">About</a>
+                  <a href="#about">About</a>
                   <a href="product.html">Products</a>
-                  <a href="">Contact</a>
+                  <a href="#con">Contact</a>
                 </div>
               </div>
               <div class="l section">
-                    afasdad
+                <h1 id="typed"></h1>
                   </div>
-<div class="feat">
+                  <div id="typed-strings">
+                    <p>Our Machines, work for your dreams</p>
+                  </div>
+                  <script>
+                    $('document').ready(function()
+                    {
+                        var typed= new Typed('#typed',{
+                          stringsElement: '#typed-strings',
+                          backSpeed: 40,
+                          typeSpeed: 40,
+                          loop: true,
+                          loopCount: Infinity
+                        });
+                    });
+                  </script>
+<div class="feat" id="feat">
     <h1>Key Features</h1>
     <div class="container">
-        <div class="card">
+        <div class="card" id="card1">
             <div class="face face1">
                 <div class="content">
                     <img src="img/PP.png">
@@ -58,7 +76,7 @@
                 </div>
             </div>
         </div>
-        <div class="card">
+        <div class="card" id="card2">
                 <div class="face face1">
                     <div class="content">
                         <img src="img/Service.png">
@@ -71,7 +89,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" id="card3">
                     <div class="face face1">
                         <div class="content">
                             <img src="img/QA.png">
@@ -86,14 +104,47 @@
                 </div>
     </div>
     </div>
+<script>
+  window.onscroll = function() {myFunction()};
 
+function myFunction() {
+  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+    document.getElementById("card1").className = "card animated zoomIn yourElement";
+    document.getElementById("card2").className = "card animated zoomIn yourElement";
+    document.getElementById("card3").className = "card animated zoomIn yourElement";
+  } else {
+    document.getElementById("card1").className = "card";
+    document.getElementById("card2").className = "card";
+    document.getElementById("card3").className = "card";
+  }
+  if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000)
+  {
+    document.getElementById("about-content").className = "about-content animated fadeIn yourElement1";
+  }
+  else{
+    document.getElementById("about-content").className = "about-content";
+  }
+  if (document.body.scrollTop > 2500 || document.documentElement.scrollTop > 2500)
+  {
+    document.getElementById("m-img").className = "m-img animated rubberBand yourElement";
+  }
+  else{
+    document.getElementById("m-img").className = "m-img";
+  }
+}
+</script>
+</script>
 <div class="about" id="about">
     <h1>About Us</h1>
-    <div class="about-content">
+    <div class="about-content" id="about-content">
         <img src="img/About.svg">
       <p><span class="ffff">We, 'SSMS ENGINEERS', are engaged in manufacturing, supplying and </span>exporting superior qaulity Pharmaceutical, Food and Chemical Machineries. These products are used for various industrial applications such as treating, formulating or processing chemicals, water, effluents, oil & wax. The plants and machinery we offer are deisgn in such a way that these have ergonomic and user friendly features. Our products are in sync with international qaulity standards and tested as per the industrial guidelines.</p>
       <p>We have a well managed designing and manufacturing unit that facilitates cost effective production of our machinery. Over the years our transparent practices have earned us the trust of both domestic and global clients. Our organization has established a strong foothold in the industry under the able leadership of our mentors. SSMS Manufacturing facility spread in 3000 Sq Feet Area. </p>
     </div>
+</div>
+
+<div class="events">
+  <h1>Products</h1>
 </div>
 
 <!-- Slider -->
@@ -184,9 +235,9 @@
       </script>
 <!-- Slider -->
 
-    <div class="con">
+    <div class="con" id="con">
       <div class="m-container">
-        <div class="m-img"><img src="img/Contact.png"></div>
+        <div class="m-img" id="m-img"><img src="img/Contact.png"></div>
         <div>
         <form name="contact" method="POST" action="https://formspree.io/maruf.glsica@gmail.com">
           <h2>Get A Quotation</h2>

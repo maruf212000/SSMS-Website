@@ -101,7 +101,7 @@ body
     height: 0px;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
-    top: 50px;
+    top: 70px;
     left: 0px;
   }
   .nav > .nav-links > a {
@@ -130,7 +130,19 @@ body
   position: relative;
   width: 100%;
   height: 100vh;
-  background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('https://source.unsplash.com/PmrwuizKUq0/1920x1080');
+  background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('../img/bg.jpg');/*https://source.unsplash.com/GWe0dlVD9e0/1920x1080*/
+  background-attachment: fixed;
+  background-size: 1920px 1080px;
+  text-align: center;
+}
+.section h1{
+  margin: auto;
+  color: white;
+  position: relative;
+  top: 45%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
 }
 header{
   position: fixed;
@@ -391,6 +403,14 @@ header .toggle
   background: rgb(141,208,152);
   text-align: center;
 }
+.yourElement
+{
+  animation-duration: 2s;
+}
+.yourElement1
+{
+  animation-duration: 5s;
+}
 .swiper-slide .details
 {
   position: absolute; 
@@ -592,7 +612,7 @@ h1
 /*Footer*/  
 .footer
 {
-  padding: 0% 7%;
+  padding: 0% 2%;
   position: relative;
 }
 .footer .footer-section
