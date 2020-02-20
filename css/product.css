@@ -195,6 +195,7 @@ header .toggle
   background-color: white;
   width: 20%;
   height: auto;
+  padding-top: 70px;
 }
 
 .tab button {
@@ -225,7 +226,7 @@ header .toggle
   background-color: white;
   position: relative;
   float: left;
-  padding: 0px 120px 0px 12px;;
+  padding: 70px 120px 0px 12px;;
   width: 80%;
   height: auto;
   display:none;
