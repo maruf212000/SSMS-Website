@@ -19,7 +19,7 @@ body
   height: 70px;
   width: 100%;
   background-color: #000000;
-  position: relative;
+  position: fixed;
 }
 
 .nav > .nav-header {
