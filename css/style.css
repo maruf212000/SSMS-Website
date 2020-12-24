@@ -218,9 +218,6 @@ header .toggle
     font-family: consolas;
     background-color: #fff;
 }
-.container
-{
-}
 .feat .container .card
 {
     /*padding-left: 4%;
@@ -300,7 +297,7 @@ header .toggle
 {
   .container .card .face.face2 .content p
   {
-    font-size: 3.5vh;
+    font-size: 3.0vh;
   }
   .container .card .face.face1 .content
 {
