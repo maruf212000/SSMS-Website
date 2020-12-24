@@ -3,7 +3,7 @@
     min-width: 100%;
     padding-top: 170px;
     padding-bottom: 100px;
-    padding-left: 28vh;
+    padding-left: 30vh;
     padding-right: 30vh;
 }
 .pro_head
@@ -18,7 +18,7 @@
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 20px;
-    width: 400px;
+    width: 40vh;
     height: 450px;
     float: left;
     text-align: center;
