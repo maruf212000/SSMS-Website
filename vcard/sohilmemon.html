@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Sohil Memon's vCard</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,700&display=swap" rel="stylesheet">
+    </head>
+    <IfModule mod_rewrite.c>
+        RewriteEngine On
+        RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /html/(.*).html\ HTTP/
+        RewriteRule .* http://localhost/html/%1 [R=301,L]
+     
+        RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /html/(.*)\ HTTP/
+        RewriteRule .* %1.html [L]
+     </IfModule>
+    <body>
+        <div>
+            
+        </div>
+    </body>
+</html>
