@@ -68,6 +68,14 @@ body{
     margin-top: 1vh;
     margin-right: -2vh;
 }
+.header
+{
+    margin: 2vh;
+    float: left;
+    font-weight: 700;
+    font-size: 4vh;
+    color: green;
+}
 .about
 {
     margin-top: 2vh;
@@ -108,4 +116,40 @@ body{
 {
     text-decoration: none;
     color: black;
+}
+@media screen and (max-width:768px)
+{
+    .vcard
+    {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        -ms-transform: translate(0%, 0%);
+        transform: translate(0, 0%);
+    }
+    .left
+    {
+        width: 100%;
+    }
+    .right
+    {
+        width: 100%;
+    }
+    .header, .logo, .social
+    {
+        display: none;
+    }
+    .about :last-child :last-child
+    {
+        display: none;
+    }
+    .about table
+    {
+        margin-bottom: 10px;
+    }
+    td,th
+    {
+        float: left;
+    }
 }
