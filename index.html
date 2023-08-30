@@ -9,10 +9,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900">
   <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
   <link rel="stylesheet" href="css/Animate.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/jquery-3.3..1.js"></script>
+  <script src="js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
   <link rel="apple-touch-icon" sizes="152x152" href="icon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
@@ -23,35 +25,97 @@
 <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-        <div class="nav" style="z-index: 3;">
-                <input type="checkbox" id="nav-check">
-                <div class="nav-header">
-                  <img src="img/logo.png" style="height: 60px;float: left; padding-top: 2px;">
-                  <div class="nav-title">
-                    SSMS Engineers
-                  </div>
-                </div>
-                <div class="nav-btn">
-                  <label for="nav-check">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </label>
-                </div>
-                
-                <div class="nav-links">
-                  <a href="index.html">Home</a>
-                  <a href="#about" id="Ab" onclick="navcheck()">About</a>
-                  <a href="product.html">Products</a>
-                  <a href="#con" id="Co" onclick="navcheck()">Contact</a>
-                  <script>
-                    function navcheck()
-                    {
-                      document.getElementById("nav-check").checked = false;
-                    }
-                  </script>
-                </div>
+  <main>
+    <div class="topbar-contact-info-wrapper">
+      <div class="topbar-contact-info-container main-container">
+        <div class="topbar-info-section">
+          <svg class="topbar-contact-svg" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg"><path d="M24 4c-7.73 0-14 6.27-14 14 0 10.5 14 26 14 26s14-15.5 14-26c0-7.73-6.27-14-14-14zm0 19c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"/><path d="M0 0h48v48H0z" fill="none"/></svg>
+          <div class="topbar-contact-details">
+            <p>C-1-B, 172, Phase-II, GIDC Vatva</p>
+            <span>Ahmedabad, Gujarat, India</span>
+          </div>
+        </div>
+        <div class="topbar-info-section">
+          <svg class="topbar-contact-svg" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h48v48H0z" fill="none"/><path d="M13.25 21.59c2.88 5.66 7.51 10.29 13.18 13.17l4.4-4.41c.55-.55 1.34-.71 2.03-.49C35.1 30.6 37.51 31 40 31c1.11 0 2 .89 2 2v7c0 1.11-.89 2-2 2C21.22 42 6 26.78 6 8c0-1.11.9-2 2-2h7c1.11 0 2 .89 2 2 0 2.49.4 4.9 1.14 7.14.22.69.06 1.48-.49 2.03l-4.4 4.42z"/></svg>
+          <div class="topbar-contact-details">
+            <p>+91-9727792615 / +91-9924688786</p>
+            <span>info@ssmsengineers.com</span>
+          </div>
+        </div>
+        <div class="topbar-info-btn-section">
+          <a href="">
+            <div class="topbar-contact-btn basic-transition">
+              Lets Discuss
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="menubar">
+      <div class="menubar-logo-container">
+        <img class="navbar-logo" src="img/logo.png">
+      </div>
+      <div class="menubar-main-items">
+        <div class="menubar-main-item"><a href="">Home</a></div>
+        <div class="menubar-main-item"><a href="">About</a></div>
+        <div class="menubar-main-item"><a href="">Products</a></div>
+        <div class="menubar-main-item"><a href="">Contact</a></div>
+      </div>
+      <div class="menubar-secondary-items">
+            <div class="menubar-info-section">
+              <svg class="menubar-contact-svg" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg"><path d="M24 4c-7.73 0-14 6.27-14 14 0 10.5 14 26 14 26s14-15.5 14-26c0-7.73-6.27-14-14-14zm0 19c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"/><path d="M0 0h48v48H0z" fill="none"/></svg>
+              <div class="menubar-contact-details">
+                <p>C-1-B, 172, Phase-II, GIDC Vatva</p>
+                <span>Ahmedabad, Gujarat, India</span>
               </div>
+            </div>
+            <div class="menubar-info-section">
+              <svg class="menubar-contact-svg" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h48v48H0z" fill="none"/><path d="M13.25 21.59c2.88 5.66 7.51 10.29 13.18 13.17l4.4-4.41c.55-.55 1.34-.71 2.03-.49C35.1 30.6 37.51 31 40 31c1.11 0 2 .89 2 2v7c0 1.11-.89 2-2 2C21.22 42 6 26.78 6 8c0-1.11.9-2 2-2h7c1.11 0 2 .89 2 2 0 2.49.4 4.9 1.14 7.14.22.69.06 1.48-.49 2.03l-4.4 4.42z"/></svg>
+              <div class="menubar-contact-details">
+                <p>+91-9727792615 / +91-9924688786</p>
+                <span>info@ssmsengineers.com</span>
+              </div>
+            </div>
+            <div class="menubar-info-btn-section">
+              <a href="">
+                <div class="menubar-contact-btn basic-transition">
+                  Lets Discuss
+                </div>
+              </a>
+            </div>
+          </div>
+    </div>
+      <div class="nav-outer-container">
+        <div class="nav main-container" style="z-index: 3;">
+          <input type="checkbox" id="nav-check">
+          <div class="nav-header">
+            <img class="navbar-logo" src="img/logo.png">
+            <!-- <div class="nav-title">
+              SSMS Engineers
+            </div> -->
+          </div>
+          <div class="nav-btn">
+            <label for="nav-check">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+          </div>
+          
+          <div class="nav-links">
+            <a href="index.html"><p class="hover-underline-animation">Home</p></a>
+            <a href="#about" id="Ab" onclick="navcheck()"><p class="hover-underline-animation">About</p></a>
+            <a href="product.html"><p class="hover-underline-animation">Products</p></a>
+            <a href="#con" id="Co" onclick="navcheck()"><p class="hover-underline-animation last">Contact</p></a>
+            <script>
+              function navcheck()
+              {
+                document.getElementById("nav-check").checked = false;
+              }
+            </script>
+          </div>
+        </div>
+      </div>
               <div class="l section">
                 <h1 id="typed"></h1>
                   </div>
@@ -70,7 +134,7 @@
                         });
                     });
                   </script>
-<div class="feat" id="feat">
+<!-- <div class="feat" id="feat">
     <h1>Key Features</h1>
     <div class="container">
         <div class="card" id="card1">
@@ -113,206 +177,64 @@
                     </div>
                 </div>
     </div>
-    </div>
-<script>
-  window.onscroll = function() {myFunction()};
-
-function myFunction() {
-  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-    document.getElementById("card1").className = "card animated zoomIn yourElement";
-    document.getElementById("card2").className = "card animated zoomIn yourElement";
-    document.getElementById("card3").className = "card animated zoomIn yourElement";
-  } else {
-    document.getElementById("card1").className = "card";
-    document.getElementById("card2").className = "card";
-    document.getElementById("card3").className = "card";
-  }
-  if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000)
-  {
-    document.getElementById("about-content").className = "about-content animated fadeIn yourElement1";
-  }
-  else{
-    document.getElementById("about-content").className = "about-content";
-  }
-  if (document.body.scrollTop > 2500 || document.documentElement.scrollTop > 2500)
-  {
-    document.getElementById("m-img").className = "m-img animated rubberBand yourElement";
-  }
-  else{
-    document.getElementById("m-img").className = "m-img";
-  }
-}
-</script>
-</script>
-<div class="about" id="about">
-    <h1>About Us</h1>
+    </div> -->
+<div class="about main-container" id="about">
+  <h2>Your Trusted Source for High-Quality Pharmaceutical, Food, and Chemical Machineries!</h2>
     <div class="about-content" id="about-content">
-        <img src="img/About.svg">
-      <p><span class="ffff">We, 'SSMS ENGINEERS', are engaged in manufacturing, supplying and </span>exporting superior qaulity Pharmaceutical, Food and Chemical Machineries. These products are used for various industrial applications such as treating, formulating or processing chemicals, water, effluents, oil & wax. The plants and machinery we offer are deisgn in such a way that these have ergonomic and user friendly features. Our products are in sync with international qaulity standards and tested as per the industrial guidelines.</p>
-      <p>We have a well managed designing and manufacturing unit that facilitates cost effective production of our machinery. Over the years our transparent practices have earned us the trust of both domestic and global clients. Our organization has established a strong foothold in the industry under the able leadership of our mentors. SSMS Manufacturing facility spread in 7200 Sq Feet Area. </p>
+        <img src="img/About.svg" />
+        <p>Welcome to 'SSMS ENGINEERS,' a leading manufacturer, supplier, and exporter of top-quality Pharmaceutical, Food, and Chemical Machineries. Our cutting-edge products are meticulously designed for a wide range of industrial applications, including chemical treatment, formulation, and processing of water, effluents, oil, and wax.</p>
+        <p>At 'SSMS ENGINEERS,' we take pride in offering machinery that meets international standards, such as GMP, cGMP, and US FDA, ensuring the utmost quality and compliance with industry guidelines. Our state-of-the-art designing and manufacturing unit enables us to produce cost-effective machinery without compromising on quality. Each of our products is thoughtfully engineered with ergonomic and user-friendly features, providing seamless operations and maximum efficiency. Contact us today for your industrial machinery needs.</p>
     </div>
-</div>
-
-<div class="events">
-  <h1>Products</h1>
 </div>
 
 <!-- Slider -->
-<div class="swiper" id="product">
-    <div class="swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <a href="index.html"><div class="imgBx">
-                    <img src="img/Products/VibroSifter.png">
-                </div>
-                <div class="details">
-                    <h3>Sifter</h3>
-                </div></a>
-              </div>
-              <div class="swiper-slide">
-                <a href="index.html"><div class="imgBx">
-                    <img src="img/Products/Paste_Kettle.png">
-                </div>
-                <div class="details">
-                    <h3>Paste Kettle</h3>
-                </div></a>
-            </div>
-            <div class="swiper-slide">
-              <a href="index.html"><div class="imgBx">
-                  <img src="img/Products/RMG.png">
-              </div>
-              <div class="details">
-                  <h3>RMG</h3>
-              </div></a>
-            </div>
-            <div class="swiper-slide">
-              <a href="index.html"><div class="imgBx">
-                  <img src="img/Products/Mass_Mixer.png">
-              </div>
-              <div class="details">
-                  <h3>Mass Mixer</h3>
-              </div></a>
-            </div>
-            <div class="swiper-slide">
-              <a href="index.html"><div class="imgBx">
-                  <img src="img/Products/FBD.png">
-              </div>
-              <div class="details">
-                  <h3>FBD</h3>
-              </div></a>
-            </div>
-            <div class="swiper-slide">
-              <a href="index.html"><div class="imgBx">
-                  <img src="img/Products/tray-dryer.png">
-              </div>
-              <div class="details">
-                  <h3>Tray Dryer</h3>
-              </div></a>
-            </div> 
-              <div class="swiper-slide">
-                <a href="index.html"><div class="imgBx">
-                    <img src="img/Products/Multi_Mill.png">
-                </div>
-                <div class="details">
-                    <h3>Mutli Mill</h3>
-                </div></a>
-            </div>
-              <div class="swiper-slide">
-                      <a href="index.html"><div class="imgBx">
-                          <img src="img/Products/Co-Mill.png">
-                      </div>
-                      <div class="details">
-                          <h3>Co-Mill</h3>
-                      </div></a>
-              </div>
-              <div class="swiper-slide">
-                <a href="index.html"><div class="imgBx">
-                    <img src="img/Products/octa_blender.png" class="imgBx">
-                </div>
-                <div class="details">
-                    <h3>Blender</h3>
-                </div></a>
-              </div>   
-              <div class="swiper-slide">
-                <a href="index.html"><div class="imgBx">
-                    <img src="img/Products/Coating_Pan.png" class="imgBx">
-                </div>
-                <div class="details">
-                    <h3>Coating Pan</h3>
-                </div></a>
-              </div>
-              <div class="swiper-slide">
-                <a href="index.html"><div class="imgBx">
-                    <img src="img/Products/AutoCoater.png" style="width: 300px;">
-                </div>
-                <div class="details">
-                    <h3>AutoCoater</h3>
-                </div></a>
-            </div>  
-            <div class="swiper-slide">
-              <a href="index.html"><div class="imgBx">
-                  <img src="img/Products/colloid_mill.png">
-              </div>
-              <div class="details">
-                  <h3>Colloid Mill</h3>
-              </div></a>
-            </div>
-            <div class="swiper-slide">
-              <a href="index.html"><div class="imgBx">
-                  <img src="img/Products/Dust_Extractor.png">
-              </div>
-              <div class="details">
-                  <h3>Dust Extractor</h3>
-              </div></a>
-            </div>
-            <div class="swiper-slide">
-              <a href="index.html"><div class="imgBx">
-                  <img src="img/Products/De_Duster.png">
-              </div>
-              <div class="details">
-                  <h3>De Duster</h3>
-              </div></a>
-            </div>
-            </div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
-          </div>
-          </div>
+<div class="swiper main-container" id="product">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <!-- Add an empty container for the swiper slides -->
+    </div>
+  </div>
+</div>
+
 <script type="text/javascript" src="js/swiper.min.js"></script>
 <script>
-        var swiper = new Swiper('.swiper-container', {
-          effect: 'coverflow',
-          grabCursor: true,
-          centeredSlides: true,
-          slidesPerView: 'auto',
-          coverflowEffect: {
-            rotate: 20,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows : true,
-          },
-          autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-          pagination: {
-            el: '.swiper-pagination',
-          },
-        });
-      </script>
+  loadProducts()
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 4,
+    spaceBetween: 16,
+    grabCursor: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      // when window width is >= 768px
+      512: {
+        slidesPerView: 1,
+      },
+      786: {
+        slidesPerView: 2,
+      }
+    },
+    on: {
+      resize: setHeightOfSlides
+    }
+  });
+  setHeightOfSlides();
+  function setHeightOfSlides() {
+    const slideWidth = document.getElementsByClassName('swiper-slide-container')[0].offsetWidth;
+    console.log(slideWidth);
+    const slideElements = Array.from(document.getElementsByClassName('swiper-slide-container'));
+    slideElements.forEach(element => {
+      element.style.height = slideWidth + "px";
+    });
+  }
+</script>
 <!-- Slider -->
 <br><br><br>
-    <div class="con" id="con">
-      <div class="m-container">
-        <div class="m-img" id="m-img"><img src="img/Contact.png"></div>
-        <div>
+    <div class="contact-container" id="con">
+      <div class="m-container main-container">
+        <div class="m-form-container">
         <form name="contact" method="POST" action="" data-netlify="true">
           <h2>Get A Quotation</h2>
           <input type="text" name="name" placeholder="Name" class="input-t" title="Enter your Name" required>
@@ -324,37 +246,94 @@ function myFunction() {
           <input type="submit" value="Send Email &#x279C;" class="m-btn"> 
           <input type="hidden" name="_next" value="https://maruf212000.github.io/SSMS-Website/index.html"/>
           </form>
-          </div>
+        </div>
+        <div class="m-map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14695.069519737624!2d72.6376679!3d22.9587926!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e88bd3bd56e4f%3A0xd8a3f702e25e2cc3!2sSSMS%20Engineers!5e0!3m2!1sen!2sin!4v1692286335911!5m2!1sen!2sin" style="border:0;width: 100%;height: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </div>
 </div>
-<div class="svg-row">
-    <svg height="100%" viewBox="0 0 1600 180" class="svg-footer">
-        <polygon points="886,86 800,172 714,86 -4,86 -4,204 1604,204 1604,86" style="fill:#fff;" />
-      </svg>
-</div>
+</main>
  <!--Footer-->
- <div class="footer">
-   <div class="footer-content">
-     <div class="footer-section">
-         <h3>SSMS Engineers</h3><hr style="background: #00834B;">
-         <p>Business is about people and relationships. That is why we try to outperform ourselves every time.</p>
-     </div>
-     <div class="footer-section">
-      <h3>Contact Info</h3><hr style="background: #00834B;">
-      <p><a href="https://goo.gl/maps/Dmpwd46gJQGh7ZmB9" target="blank"><img src="img/location.png">C-1-B, 172, Near Ambika Cross Road, Phase-II, GIDC Vatva,Ahmedabad-382445</a></p>
-      <p><a href="mailto: info@ssmsenginners.com"><img src="img/mail.png">info@ssmsengineers.com</a></p>
-      <p><img src="img/call.png">+91-9924688786 / +91-9727792615</p>
+ <div class="footer-container">
+ <div class="ft-container">
+  <div class="ft-main-container main-container">
+    <div class="company-info">
+      <h3>SSMS Engineers</h3>
+      <h4>Innovative Excellence in Pharmaceutical Machinery Manufacturing.</h4>
+      <p>Join the revolution in pharmaceutical machinery. Choose <b>SSMS Engineers</b> for innovation, quality, and excellence.</p>
+      <div style="padding-top: 8px;">
+        <a href="https://www.ssmsengineers.com/index">
+          <div class ="footer-btn">About Us</div>
+        </a>
+      </div>
     </div>
-   </div>
-     <div class="footer-section">
-       <h3>Useful Links</h3><hr style="background: #00834B;">
-       <p><a href="#">Products</a></p>
-       <p><a href="#features">Features</a></p>
-     </div>
+    <div class="official-info">
+      <h3>Official Info</h3>
+      <table>
+        <tr>
+          <td><a href="https://goo.gl/maps/Dmpwd46gJQGh7ZmB9" target="blank"><svg class="footer-contact-svg" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg"><path d="M24 4c-7.73 0-14 6.27-14 14 0 10.5 14 26 14 26s14-15.5 14-26c0-7.73-6.27-14-14-14zm0 19c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"/><path d="M0 0h48v48H0z" fill="none"/></svg></a></td>
+          <td><a href="https://goo.gl/maps/Dmpwd46gJQGh7ZmB9" target="blank">C-1-B, 172, Near Ambika Cross Road, Phase-II, GIDC Vatva,Ahmedabad-382445</a></td>
+        </tr>
+        <tr>
+          <td><a href="mailto:info@ssmsengineers.com" target="blank"><svg class="footer-contact-svg" style="enable-background:new 0 0 24 24;" version="1.1" viewBox="0 0 24 24" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="info"/><g id="icons"><path d="M20,3H4C1.8,3,0,4.8,0,7v10c0,2.2,1.8,4,4,4h16c2.2,0,4-1.8,4-4V7C24,4.8,22.2,3,20,3z M21.6,8.8l-7.9,5.3   c-0.5,0.3-1.1,0.5-1.7,0.5s-1.2-0.2-1.7-0.5L2.4,8.8C2,8.5,1.9,7.9,2.2,7.4C2.5,7,3.1,6.9,3.6,7.2l7.9,5.3c0.3,0.2,0.8,0.2,1.1,0   l7.9-5.3c0.5-0.3,1.1-0.2,1.4,0.3C22.1,7.9,22,8.5,21.6,8.8z" id="email"/></g></svg></a></td>
+          <td><a href="mailto:info@ssmsengineers.com" target="blank">info@ssmsengineers.com</a></td>
+        </tr>
+        <tr>
+          <td><a href="tel:+91-9924688786" target="blank"><svg class="footer-contact-svg" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h48v48H0z" fill="none"/><path d="M13.25 21.59c2.88 5.66 7.51 10.29 13.18 13.17l4.4-4.41c.55-.55 1.34-.71 2.03-.49C35.1 30.6 37.51 31 40 31c1.11 0 2 .89 2 2v7c0 1.11-.89 2-2 2C21.22 42 6 26.78 6 8c0-1.11.9-2 2-2h7c1.11 0 2 .89 2 2 0 2.49.4 4.9 1.14 7.14.22.69.06 1.48-.49 2.03l-4.4 4.42z"/></svg></a></td>
+          <td><a href="tel:+91-9924688786" target="blank">+91-9924688786 / +91-9727792615</a></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <div class="footer-socials">
+              <a href="https://www.linkedin.com/company/ssms-engineers/" target="blank">
+                <svg class="svg-logos" height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <path d="M256,0c141.29,0 256,114.71 256,256c0,141.29 -114.71,256 -256,256c-141.29,0 -256,-114.71 -256,-256c0,-141.29 114.71,-256 256,-256Zm-80.037,399.871l0,-199.921l-66.464,0l0,199.921l66.464,0Zm239.62,0l0,-114.646c0,-61.409 -32.787,-89.976 -76.509,-89.976c-35.255,0 -51.047,19.389 -59.889,33.007l0,-28.306l-66.447,0c0.881,18.757 0,199.921 0,199.921l66.446,0l0,-111.65c0,-5.976 0.43,-11.95 2.191,-16.221c4.795,-11.935 15.737,-24.299 34.095,-24.299c24.034,0 33.663,18.34 33.663,45.204l0,106.966l66.45,0Zm-272.403,-296.321c-22.74,0 -37.597,14.95 -37.597,34.545c0,19.182 14.405,34.544 36.717,34.544l0.429,0c23.175,0 37.6,-15.362 37.6,-34.544c-0.43,-19.595 -14.424,-34.545 -37.149,-34.545Z"/>
+                </svg>
+              </a>
+              <a href="https://www.youtube.com/channel/UC2cBO0rKDdCjCL9lVpJMzQA" target="blank">
+                <svg class="svg-logos" enable-background="new 0 0 32 32" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g id="OUTLINE_copy_2">
+                    <g>
+                      <g>
+                        <polygon points="13.83,19.259 19.262,16 13.83,12.741    "/>
+                      </g>
+                      <g>
+                        <path d="M16,0C7.164,0,0,7.163,0,16s7.164,16,16,16s16-7.164,16-16S24.836,0,16,0z M24.688,16.701c0,1.5-0.174,3-0.174,3     s-0.17,1.278-0.69,1.839c-0.661,0.738-1.401,0.742-1.741,0.786C19.651,22.512,16,22.518,16,22.518s-4.518-0.044-5.908-0.186     c-0.387-0.077-1.254-0.055-1.916-0.792c-0.521-0.562-0.69-1.839-0.69-1.839s-0.174-1.499-0.174-3v-1.406     c0-1.5,0.174-2.999,0.174-2.999s0.17-1.278,0.69-1.841C8.837,9.716,9.577,9.712,9.917,9.67c2.431-0.188,6.079-0.188,6.079-0.188     h0.008c0,0,3.648,0,6.079,0.188c0.339,0.042,1.08,0.046,1.741,0.784c0.521,0.563,0.69,1.841,0.69,1.841s0.174,1.5,0.174,3V16.701     z"/>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </a>
+              <a href="https://m.facebook.com/ssmsengineers/" target="blank">
+                <svg class="svg-logos" height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <path d="M512,257.555c0,-141.385 -114.615,-256 -256,-256c-141.385,0 -256,114.615 -256,256c0,127.777 93.616,233.685 216,252.89l0,-178.89l-65,0l0,-74l65,0l0,-56.4c0,-64.16 38.219,-99.6 96.695,-99.6c28.009,0 57.305,5 57.305,5l0,63l-32.281,0c-31.801,0 -41.719,19.733 -41.719,39.978l0,48.022l71,0l-11.35,74l-59.65,0l0,178.89c122.385,-19.205 216,-125.113 216,-252.89Z" style="fill-rule:nonzero;"/>
+                </svg>
+              </a>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="important-links">
+      <h3>Important Links</h3>
+      <table>
+        <tr>
+          <td><a href="">Granulation Line</a></td>
+        </tr>
+        <tr>
+          <td><a href="">Fluid Bed Dryer</a></td>
+        </tr>
+        <tr>
+          <td><a href="">Rapid Mixer Granulator</a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    Copyright &copy; 2019 <a href="https://www.ssmsengineers.com">ssmsengineers.com</a>. All rights reserved.
+  </div>
  </div>
- <div class="footer-bottom">
-  Copyright &copy; 2019 ssmsengineers.com | All rights reserved | Designed & Developed by MM
-</div>
- <!--Footer-->   
+ </div>
+  <!--Footer-->
 </body>
 </html>
