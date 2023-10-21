@@ -1,0 +1,289 @@
+@import "main-slider.css";
+@import "company-profile.css";
+@import "clients-slider.css";
+@import "headline-section.css";
+@import "product-slider.css";
+@import "stats-info.css";
+@import "testimonials.css";
+
+html {
+  margin: 0;
+  padding: 0;
+  /* font-family: 'Raleway',sans-serif; */
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 0;
+}
+
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width:1200px) {
+  .main-container {
+    margin: 0 16px;
+  }
+}
+
+.underlined-header {
+  font-size: 1.5rem;
+  line-height: 1.25em;
+  margin: 0.13em 0 0;
+  padding-bottom: 0.5em;
+  padding-right: 0.5em;
+  position: relative;
+  display:inline-block;
+  font-weight: bold;
+}
+
+.underlined-header::before {
+  content: "";
+  background-color: var(--primary-color);
+  width: 80px;
+  max-width: 50% !important;
+  height: 3px;
+  border-radius: 1.5px;
+  position: absolute;
+  /* left: 0; */
+  bottom: 0;
+}
+
+.basic-transition {
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.about-content {
+  font-size: 16px;
+  line-height: 24px;
+  /* text-align: justify; */
+}
+
+.about h2 {
+  font-size: 28px;
+  /* color: #343A6C; */
+}
+
+.about img {
+  padding-left: 10px;
+  float: right;
+  width: 280px;
+}
+
+/*Contact*/
+input::-webkit-input-placeholder {
+  color: #999999;
+  font-weight: bold;
+}
+
+input:-moz-placeholder {
+  color: #999999;
+}
+
+input::-moz-placeholder {
+  color: #999999;
+}
+
+input:-ms-input-placeholder {
+  color: #999999;
+  font-weight: bold;
+}
+
+.m-container {
+  background-color: white;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  align-items: stretch;
+  /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+}
+
+.m-form-container {
+  height: auto;
+  text-align: center;
+  padding: 2% 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.m-map-container {
+  grid-column: span 1;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.m-map-container iframe {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+@-webkit-keyframes anim-shadow {
+  99% {
+    box-shadow: 0 0 15px 5px rgba(0, 255, 0, .5);
+  }
+
+  100% {
+    box-shadow: 0px 0px 0px 0px;
+  }
+}
+
+@keyframes anim-shadow {
+  99% {
+    box-shadow: 0 0 15px 5px rgba(0, 255, 0, .5);
+  }
+
+  100% {
+    box-shadow: 0px 0px 0px 0px;
+  }
+}
+
+/*Product*/
+.tab {
+  float: left;
+  border-right: 1px solid #ccc;
+  width: 20%;
+  height: 100%;
+  padding-top: 80px;
+}
+
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  border-right: 5px solid #00834B;
+  color: #00834B;
+}
+
+.tabcontent {
+  position: relative;
+  float: left;
+  padding: 80px 12px 0px 12px;
+  ;
+  width: 80%;
+  height: 100%;
+  display: none;
+}
+
+h1 {
+  text-align: center;
+}
+
+.Img {
+  padding: 4% 2% 2% 2%;
+  float: left;
+  height: 750px;
+}
+
+.tabcontent div {
+  padding-top: 4%;
+}
+
+.tabcontent p {
+  padding: 0% 2% 2% 2%;
+  text-align: justify;
+}
+
+.tabcontent table {
+  font-size: 18px;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.tabcontent table th {
+  background-color: #00834B;
+  border: 1px solid black;
+  color: white;
+}
+
+.tabcontent table tr.even {
+  background-color: #D1EDF3;
+}
+
+.tabcontent table tr.odd {
+  background-color: #eaf6f9;
+}
+
+.tabcontent table td {
+  border-left: 1px solid black;
+  text-align: center;
+}
+
+.tabcontent table td.tit {
+  text-align: left;
+}
+
+/*Footer*/
+.ft-main-container a {
+  color: white;
+  text-decoration: none;
+}
+
+.ft-main-container a:hover {
+  color: #2656DA;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.footer-contact-svg {
+  fill: #2656DA;
+  margin-right: 8px;
+  height: 16px;
+  width: 16px;
+  margin-top: 1px;
+}
+
+.ft-main-container td {
+  vertical-align: top;
+  padding: 10px 0;
+}
+
+.ft-main-container table {
+  margin-top: -12px;
+}
+
+.important-links a {
+  color: #2656DA;
+}
+
+.company-info a:hover {
+  color: white;
+}
+
+main {
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+}

@@ -1,0 +1,138 @@
+@import "features.css";
+@import "testimonials.css";
+@import "headline-section.css";
+@import "page-title.css";
+
+.intro-container {
+    padding: 50px 0;
+}
+
+.intro-container p {
+    color: var(--secondary-text-color);
+    font-size: 1rem;
+    line-height: 1.8em;
+    margin-bottom: 15px;
+    margin-right: 2em;
+}
+
+.brochure-wrapper {
+    padding-bottom: 50px;
+}
+
+.brochure-container {
+    background-color: var(--primary-bg-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 80px;
+    border-radius: 8px;
+}
+
+.brochure-container .headline {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.brochure-container .subheadline {
+    color: var(--secondary-text-color);
+}
+
+.brochure-download-btn {
+    padding: 0 42px;
+    height: 55px;
+    font-size: 15px;
+    border: 2px solid #fff;
+    border-radius: 51px;
+    text-align: center;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+.brochure-download-btn:hover {
+    border-color: var(--primary-color);
+}
+
+.brochure-download-btn svg {
+    transform: translateY(-2px);
+    height: 24px;
+    fill: white;
+}
+
+@media screen and (max-width:1024px) {
+    .brochure-container {
+        padding: 24px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .brochure-container {
+        padding: 16px;
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+
+.docs-img-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 16px 0 4px 0;
+}
+
+.docs-img-container img {
+    padding: 20px;
+    width: 50%;
+    max-width: 150px;
+}
+
+.docs-img-container img:hover {
+    transform: scale(1.1);
+}
+
+.documentation-container {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.documentation-container p {
+    color: var(--secondary-text-color);
+    font-size: 1rem;
+    line-height: 1.8em;
+    margin-bottom: 15px;
+    margin-right: 2em;
+    text-align: center;
+}
+
+.decumentation-container h2 {
+    font-size: 1.5rem;
+    line-height: 1.25em;
+    margin: 0.13em 0 0.5em 0;
+    padding-bottom: 0.5em;
+    padding-right: 0.5em;
+    position: relative;
+    font-weight: bold;
+}
+
+.documentation-container h2::before {
+    content: "";
+    background-color: var(--primary-color);
+    width: 64px;
+    height: 5px;
+    border-radius: 2.5px;
+    position: absolute;
+    left: calc(50% - 25px);
+    bottom: 0;
+}
+
+@media screen and (max-width:768px) {
+    .docs-img-container img {
+        padding: 0;
+    }
+    .docs-img-container img:last-child {
+        transform: translateY(-15px);
+    }
+}

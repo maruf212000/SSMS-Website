@@ -1,0 +1,9 @@
+:root {
+    --logo-blue: #1e90ff;
+    --logo-green: rgba(0, 255, 0, .5);
+    --primary-color: #2656DA;
+    --primary-bg-color: rgb(10, 29, 77);
+    --primary-text-color: white;
+    --secondary-text-color: #6a6a6a;
+    --border-color: rgb(221, 221, 221);
+}
