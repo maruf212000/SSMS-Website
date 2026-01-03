@@ -1,5 +1,5 @@
 .headline-outer-container {
-    background: linear-gradient(rgba(10, 29, 77, 0.85), rgba(10, 29, 77, 0.85)), url('../img/headline-bg.jpg');
+    background: linear-gradient(rgba(10, 29, 77, 0.85), rgba(10, 29, 77, 0.85)), url('../img/headline-bg.png');
     background-size: cover;
     align-content: center;
 }
