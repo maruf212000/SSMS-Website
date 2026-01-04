@@ -1,0 +1,51 @@
+.headline-outer-container {
+    background: linear-gradient(rgba(10, 29, 77, 0.85), rgba(10, 29, 77, 0.85)), url('../img/headline-bg.png');
+    background-size: cover;
+    align-content: center;
+}
+
+.headline-outer-container h1 {
+    font-size: 1.8rem;
+    line-height: 1.3em;
+    color: white;
+    margin-bottom: 1.33em;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+
+.headline-outer-container h1 span {
+    color: var(--primary-color);
+}
+
+.headline-outer-container a {
+    text-decoration: none;
+}
+
+.headline-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.headline-btn {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px 28px;
+    border-radius: 4px;
+    border: 2px solid var(--primary-color);
+    background-color: transparent;
+    color: white;
+    width: fit-content;
+}
+
+.headline-btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+@media screen and (max-width: 767px) {
+    .headline-outer-container h1 {
+        font-size: 1.2rem;
+    }
+}
