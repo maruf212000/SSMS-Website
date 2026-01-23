@@ -232,20 +232,74 @@
     </script>
   </div>
 </div>
-    <div class="pt-wrapper" style="background: url('../assets/img/about-bg.jpg') center center/cover no-repeat local;">
+    <!-- Product Schema Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "Octagonal Blender",
+  "description": "The Octagonal Blender combines efficient powder mixing with precise discharge control, designed for scalable pharmaceutical blending from lab to production scale.",
+  "image": "../assets/img/Products/octa_blender.png",
+  "brand": {
+    "@type": "Brand",
+    "name": "SSMS Engineers"
+  },
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "SSMS Engineers",
+    "url": "..",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "IN"
+    }
+  },
+  "category": "Pharmaceutical Equipment",
+  "offers": {
+    "@type": "Offer",
+    "availability": "https://schema.org/InStock",
+    "priceCurrency": "INR",
+    "seller": {
+      "@type": "Organization",
+      "name": "SSMS Engineers"
+    },
+    "priceValidUntil": "2027-01-23"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "25",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+}
+</script>
+
+<div class="pt-wrapper" style="background: url('../assets/img/about-bg.jpg') center center/cover no-repeat local;">
     <div class="pt-container main-container">
+        
         
         <h2>Octagonal Blender</h2>
         <p>
             
-                <a href="/home">home</a> > 
+                
+                    <a href="/">Home</a>
+                
+                 > 
             
-                <a href="/products">products</a> > 
+                
+                    <a href="/products">Products</a>
+                
+                 > 
             
-            <span>Octagonal Blender</span>
+                
+                    <span>Octagonal Blender</span>
+                
+                
+            
         </p>
     </div>
 </div>
+
   <div class="product-desc-container main-container">
     <div class="product-top-section">
       <div class="image-container">
@@ -360,6 +414,44 @@
   
 
   
+    <!-- FAQ Schema Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        
+        {
+          "@type": "Question",
+          "name": "What is the maximum blending capacity?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Octagonal Blender can handle up to 5000 Kg batches, making it suitable for small lab trials to full production runs."
+          }
+        },
+        
+        {
+          "@type": "Question",
+          "name": "How uniform is the powder mixing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Octagonal design ensures 98%+ mixing uniformity, producing consistent batch quality and reducing product variance."
+          }
+        },
+        
+        {
+          "@type": "Question",
+          "name": "Can the discharge be positioned precisely?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The self-positioning sensor automatically maintains discharge angle, ensuring consistent and complete batch unloading."
+          }
+        }
+        
+      ]
+    }
+    </script>
+    
     <div class="faq-container main-container">
       <h2 class="underlined-header">Frequently Asked Questions</h2>
       <div class="faq-list">

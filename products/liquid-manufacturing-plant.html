@@ -232,20 +232,74 @@
     </script>
   </div>
 </div>
-    <div class="pt-wrapper" style="background: url('../assets/img/about-bg.jpg') center center/cover no-repeat local;">
+    <!-- Product Schema Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "Liquid Manufacturing Plant",
+  "description": "The Liquid Manufacturing Plant delivers efficient batch processing for pharmaceutical syrups, suspensions, and liquid formulations with integrated heating, precise stirring, and GMP-compliant construction for reliable pharmaceutical production.",
+  "image": "../assets/img/Products/liquid_manufacturing_plant.jpg",
+  "brand": {
+    "@type": "Brand",
+    "name": "SSMS Engineers"
+  },
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "SSMS Engineers",
+    "url": "..",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "IN"
+    }
+  },
+  "category": "Pharmaceutical Equipment",
+  "offers": {
+    "@type": "Offer",
+    "availability": "https://schema.org/InStock",
+    "priceCurrency": "INR",
+    "seller": {
+      "@type": "Organization",
+      "name": "SSMS Engineers"
+    },
+    "priceValidUntil": "2027-01-23"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "25",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+}
+</script>
+
+<div class="pt-wrapper" style="background: url('../assets/img/about-bg.jpg') center center/cover no-repeat local;">
     <div class="pt-container main-container">
+        
         
         <h2>Liquid Manufacturing Plant</h2>
         <p>
             
-                <a href="/home">home</a> > 
+                
+                    <a href="/">Home</a>
+                
+                 > 
             
-                <a href="/products">products</a> > 
+                
+                    <a href="/products">Products</a>
+                
+                 > 
             
-            <span>Liquid Manufacturing Plant</span>
+                
+                    <span>Liquid Manufacturing Plant</span>
+                
+                
+            
         </p>
     </div>
 </div>
+
   <div class="product-desc-container main-container">
     <div class="product-top-section">
       <div class="image-container">
@@ -811,6 +865,44 @@
   
 
   
+    <!-- FAQ Schema Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        
+        {
+          "@type": "Question",
+          "name": "What materials are used in liquid manufacturing plant construction?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The main shell is fabricated from 4mm thick SS 316 stainless steel, ensuring superior hygiene and corrosion resistance. The outer shell uses 3mm SS 304 with 50mm glass wool insulation. All contact parts are SS 316, non-contact parts are SS 304, meeting pharmaceutical manufacturing standards."
+          }
+        },
+        
+        {
+          "@type": "Question",
+          "name": "How precise is the temperature control?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The integrated 8 KW heater with water/thermic fluid circulation provides temperature precision of ±2°C. The jacket operates at maximum 4 kg/cm² pressure, enabling heating from ambient to 100°C with precise control for temperature-sensitive pharmaceutical formulations."
+          }
+        },
+        
+        {
+          "@type": "Question",
+          "name": "Can the stirrer speed be adjusted for different formulations?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The 7.5 HP bottom entry propeller stirrer includes VFD (Variable Frequency Drive) control, enabling speed adjustment from 0-1440 RPM. This flexibility supports 20+ different pharmaceutical formulations from syrups to suspensions with optimized mixing for each."
+          }
+        }
+        
+      ]
+    }
+    </script>
+    
     <div class="faq-container main-container">
       <h2 class="underlined-header">Frequently Asked Questions</h2>
       <div class="faq-list">

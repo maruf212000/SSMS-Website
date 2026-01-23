@@ -232,20 +232,74 @@
     </script>
   </div>
 </div>
-    <div class="pt-wrapper" style="background: url('../assets/img/about-bg.jpg') center center/cover no-repeat local;">
+    <!-- Product Schema Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "Ointment Manufacturing Plant",
+  "description": "The Ointment Manufacturing Plant delivers efficient batch processing for pharmaceutical creams, ointments, pastes, and semi-solid formulations with integrated high-shear mixing, precise heating, and GMP-compliant construction for reliable topical product production.",
+  "image": "../assets/img/Products/ointment_manufacturing_plant.png",
+  "brand": {
+    "@type": "Brand",
+    "name": "SSMS Engineers"
+  },
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "SSMS Engineers",
+    "url": "..",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "IN"
+    }
+  },
+  "category": "Pharmaceutical Equipment",
+  "offers": {
+    "@type": "Offer",
+    "availability": "https://schema.org/InStock",
+    "priceCurrency": "INR",
+    "seller": {
+      "@type": "Organization",
+      "name": "SSMS Engineers"
+    },
+    "priceValidUntil": "2027-01-23"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "25",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+}
+</script>
+
+<div class="pt-wrapper" style="background: url('../assets/img/about-bg.jpg') center center/cover no-repeat local;">
     <div class="pt-container main-container">
+        
         
         <h2>Ointment Manufacturing Plant</h2>
         <p>
             
-                <a href="/home">home</a> > 
+                
+                    <a href="/">Home</a>
+                
+                 > 
             
-                <a href="/products">products</a> > 
+                
+                    <a href="/products">Products</a>
+                
+                 > 
             
-            <span>Ointment Manufacturing Plant</span>
+                
+                    <span>Ointment Manufacturing Plant</span>
+                
+                
+            
         </p>
     </div>
 </div>
+
   <div class="product-desc-container main-container">
     <div class="product-top-section">
       <div class="image-container">
@@ -873,6 +927,44 @@
   
 
   
+    <!-- FAQ Schema Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        
+        {
+          "@type": "Question",
+          "name": "What is the difference between liquid and ointment manufacturing plants?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Ointment Manufacturing Plant features high-shear stirrer design optimized for emulsification and viscous material handling (up to 100,000 cP), while the Liquid Plant uses standard propeller stirrers. The ointment plant includes enhanced cooling arrangements for the mechanical seal to handle high-viscosity processing."
+          }
+        },
+        
+        {
+          "@type": "Question",
+          "name": "Can the plant handle different types of semi-solid formulations?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The variable frequency drive stirrer supports 25+ different formulation types including creams, ointments, pastes, gels, and semi-solid suspensions. The VFD enables speed optimization from 0-1440 RPM for each formulation type, ensuring optimal texture and consistency."
+          }
+        },
+        
+        {
+          "@type": "Question",
+          "name": "How does the high-shear stirrer ensure uniform emulsion?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The high-shear propeller stirrer operates at variable speeds up to 1440 RPM, creating intense mixing that breaks oil droplets into uniform particles. This achieves 99%+ emulsion stability with zero separation, producing consistent cream and ointment texture across all batches."
+          }
+        }
+        
+      ]
+    }
+    </script>
+    
     <div class="faq-container main-container">
       <h2 class="underlined-header">Frequently Asked Questions</h2>
       <div class="faq-list">

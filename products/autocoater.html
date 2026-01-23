@@ -232,20 +232,74 @@
     </script>
   </div>
 </div>
-    <div class="pt-wrapper" style="background: url('../assets/img/about-bg.jpg') center center/cover no-repeat local;">
+    <!-- Product Schema Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "Autocoater",
+  "description": "The Autocoater delivers precision film and enteric coating with fully automated discharge and advanced airflow control, engineered for high-volume pharmaceutical coating with consistent quality and minimal manual intervention.",
+  "image": "../assets/img/Products/AutoCoater.png",
+  "brand": {
+    "@type": "Brand",
+    "name": "SSMS Engineers"
+  },
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "SSMS Engineers",
+    "url": "..",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "IN"
+    }
+  },
+  "category": "Pharmaceutical Equipment",
+  "offers": {
+    "@type": "Offer",
+    "availability": "https://schema.org/InStock",
+    "priceCurrency": "INR",
+    "seller": {
+      "@type": "Organization",
+      "name": "SSMS Engineers"
+    },
+    "priceValidUntil": "2027-01-23"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "25",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+}
+</script>
+
+<div class="pt-wrapper" style="background: url('../assets/img/about-bg.jpg') center center/cover no-repeat local;">
     <div class="pt-container main-container">
+        
         
         <h2>Autocoater</h2>
         <p>
             
-                <a href="/home">home</a> > 
+                
+                    <a href="/">Home</a>
+                
+                 > 
             
-                <a href="/products">products</a> > 
+                
+                    <a href="/products">Products</a>
+                
+                 > 
             
-            <span>Autocoater</span>
+                
+                    <span>Autocoater</span>
+                
+                
+            
         </p>
     </div>
 </div>
+
   <div class="product-desc-container main-container">
     <div class="product-top-section">
       <div class="image-container">
@@ -637,6 +691,62 @@
   
 
   
+    <!-- FAQ Schema Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        
+        {
+          "@type": "Question",
+          "name": "Can the Autocoater handle both film and enteric coating?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The versatile pan design accommodates both film and enteric coating types without equipment changes. Simply adjust VFD speed, spray rate, and air temperature for each coating type, eliminating the need for separate coating machines."
+          }
+        },
+        
+        {
+          "@type": "Question",
+          "name": "What is the coating efficiency and how is product loss minimized?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "With 53% pan perforations, optimized spray jet positioning, and automatic airflow damping, coating efficiency is 95%+ with minimal product loss. The separate spray and air zones maximize coating adhesion while reducing overspray waste by 20-30%."
+          }
+        },
+        
+        {
+          "@type": "Question",
+          "name": "How does the 100% auto discharge improve productivity?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The fully automated discharge eliminates manual unloading, saving 10-15 minutes per batch. Operators don&#39;t need to open the pan or manually tilt for discharge, reducing labor requirements and enabling continuous production with faster batch changeover."
+          }
+        },
+        
+        {
+          "@type": "Question",
+          "name": "How does VFD speed control (1-15 RPM) improve coating quality?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "VFD enables precise, step-less pan speed control optimized for different tablet shapes, sizes, and coating types. This improves coating consistency by 20% and supports 30+ different tablet types within a single machine, reducing need for multiple coaters."
+          }
+        },
+        
+        {
+          "@type": "Question",
+          "name": "What are the space and utility savings with the Autocoater?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Autocoater&#39;s separate spray and air flow zones maximize space utilization and reduce steam consumption by 15-20% compared to traditional pan coaters. The compact design reduces facility footprint, and eliminating need for separate film and enteric coaters saves 40-50% in equipment costs."
+          }
+        }
+        
+      ]
+    }
+    </script>
+    
     <div class="faq-container main-container">
       <h2 class="underlined-header">Frequently Asked Questions</h2>
       <div class="faq-list">

@@ -232,20 +232,74 @@
     </script>
   </div>
 </div>
-    <div class="pt-wrapper" style="background: url('../assets/img/about-bg.jpg') center center/cover no-repeat local;">
+    <!-- Product Schema Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "Vacuum Tray Dryer",
+  "description": "The Vacuum Tray Dryer delivers efficient low-temperature drying with heated shelf technology and positive pressure design, engineered for heat-sensitive pharmaceutical products requiring gentle, controlled drying.",
+  "image": "../assets/img/Products/vacuum_tray_dryer.jpeg",
+  "brand": {
+    "@type": "Brand",
+    "name": "SSMS Engineers"
+  },
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "SSMS Engineers",
+    "url": "..",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "IN"
+    }
+  },
+  "category": "Pharmaceutical Equipment",
+  "offers": {
+    "@type": "Offer",
+    "availability": "https://schema.org/InStock",
+    "priceCurrency": "INR",
+    "seller": {
+      "@type": "Organization",
+      "name": "SSMS Engineers"
+    },
+    "priceValidUntil": "2027-01-23"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "25",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+}
+</script>
+
+<div class="pt-wrapper" style="background: url('../assets/img/about-bg.jpg') center center/cover no-repeat local;">
     <div class="pt-container main-container">
+        
         
         <h2>Vacuum Tray Dryer</h2>
         <p>
             
-                <a href="/home">home</a> > 
+                
+                    <a href="/">Home</a>
+                
+                 > 
             
-                <a href="/products">products</a> > 
+                
+                    <a href="/products">Products</a>
+                
+                 > 
             
-            <span>Vacuum Tray Dryer</span>
+                
+                    <span>Vacuum Tray Dryer</span>
+                
+                
+            
         </p>
     </div>
 </div>
+
   <div class="product-desc-container main-container">
     <div class="product-top-section">
       <div class="image-container">
@@ -725,6 +779,44 @@
   
 
   
+    <!-- FAQ Schema Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        
+        {
+          "@type": "Question",
+          "name": "How does vacuum drying reduce drying time?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The vacuum environment lowers the boiling point of water, allowing efficient moisture removal at lower temperatures. Combined with heated shelf circulation, this reduces drying time by 30-40% compared to atmospheric drying."
+          }
+        },
+        
+        {
+          "@type": "Question",
+          "name": "Can the vacuum tray dryer handle heat-sensitive products?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The low-temperature capability combined with vacuum enables safe drying of heat-sensitive pharmaceutical compounds without degradation. The system preserves product stability and potency."
+          }
+        },
+        
+        {
+          "@type": "Question",
+          "name": "What safety features are included?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The dryer includes FLP control panel, Rupture disc provision, Vacuum gauge monitoring, sample port for batch analysis, and view glass for process visualization. N2 purging line and safety features during manual discharge provide additional operator protection."
+          }
+        }
+        
+      ]
+    }
+    </script>
+    
     <div class="faq-container main-container">
       <h2 class="underlined-header">Frequently Asked Questions</h2>
       <div class="faq-list">

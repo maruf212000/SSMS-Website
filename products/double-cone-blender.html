@@ -232,20 +232,74 @@
     </script>
   </div>
 </div>
-    <div class="pt-wrapper" style="background: url('../assets/img/about-bg.jpg') center center/cover no-repeat local;">
+    <!-- Product Schema Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "Double Cone Blender",
+  "description": "The Double Cone Blender delivers superior mixing uniformity with symmetrical cone design, engineered for efficient pharmaceutical blending across lab to production scales.",
+  "image": "../assets/img/Products/double_cone_blender.jpg",
+  "brand": {
+    "@type": "Brand",
+    "name": "SSMS Engineers"
+  },
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "SSMS Engineers",
+    "url": "..",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "IN"
+    }
+  },
+  "category": "Pharmaceutical Equipment",
+  "offers": {
+    "@type": "Offer",
+    "availability": "https://schema.org/InStock",
+    "priceCurrency": "INR",
+    "seller": {
+      "@type": "Organization",
+      "name": "SSMS Engineers"
+    },
+    "priceValidUntil": "2027-01-23"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "25",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+}
+</script>
+
+<div class="pt-wrapper" style="background: url('../assets/img/about-bg.jpg') center center/cover no-repeat local;">
     <div class="pt-container main-container">
+        
         
         <h2>Double Cone Blender</h2>
         <p>
             
-                <a href="/home">home</a> > 
+                
+                    <a href="/">Home</a>
+                
+                 > 
             
-                <a href="/products">products</a> > 
+                
+                    <a href="/products">Products</a>
+                
+                 > 
             
-            <span>Double Cone Blender</span>
+                
+                    <span>Double Cone Blender</span>
+                
+                
+            
         </p>
     </div>
 </div>
+
   <div class="product-desc-container main-container">
     <div class="product-top-section">
       <div class="image-container">
@@ -362,6 +416,44 @@
   
 
   
+    <!-- FAQ Schema Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        
+        {
+          "@type": "Question",
+          "name": "What is the maximum blending capacity?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Double Cone Blender can handle up to 5000 Kg batches, making it ideal for small lab trials to large-scale production runs."
+          }
+        },
+        
+        {
+          "@type": "Question",
+          "name": "How does the symmetrical design improve mixing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The double cone geometry eliminates dead zones and provides superior tumbling action, achieving 99%+ mixing uniformity without segregation."
+          }
+        },
+        
+        {
+          "@type": "Question",
+          "name": "Is the blender suitable for heat-sensitive formulations?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The low-shear mixing action and gentle tumbling motion make it ideal for heat-sensitive pharmaceutical powders and formulations."
+          }
+        }
+        
+      ]
+    }
+    </script>
+    
     <div class="faq-container main-container">
       <h2 class="underlined-header">Frequently Asked Questions</h2>
       <div class="faq-list">

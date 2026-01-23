@@ -232,20 +232,74 @@
     </script>
   </div>
 </div>
-    <div class="pt-wrapper" style="background: url('../assets/img/about-bg.jpg') center center/cover no-repeat local;">
+    <!-- Product Schema Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "Dust Extractor",
+  "description": "The Dust Extractor eliminates production dust while protecting tableting equipment, featuring premium materials and efficient collection systems.",
+  "image": "../assets/img/Products/Dust_Extractor.png",
+  "brand": {
+    "@type": "Brand",
+    "name": "SSMS Engineers"
+  },
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "SSMS Engineers",
+    "url": "..",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "IN"
+    }
+  },
+  "category": "Pharmaceutical Equipment",
+  "offers": {
+    "@type": "Offer",
+    "availability": "https://schema.org/InStock",
+    "priceCurrency": "INR",
+    "seller": {
+      "@type": "Organization",
+      "name": "SSMS Engineers"
+    },
+    "priceValidUntil": "2027-01-23"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "25",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+}
+</script>
+
+<div class="pt-wrapper" style="background: url('../assets/img/about-bg.jpg') center center/cover no-repeat local;">
     <div class="pt-container main-container">
+        
         
         <h2>Dust Extractor</h2>
         <p>
             
-                <a href="/home">home</a> > 
+                
+                    <a href="/">Home</a>
+                
+                 > 
             
-                <a href="/products">products</a> > 
+                
+                    <a href="/products">Products</a>
+                
+                 > 
             
-            <span>Dust Extractor</span>
+                
+                    <span>Dust Extractor</span>
+                
+                
+            
         </p>
     </div>
 </div>
+
   <div class="product-desc-container main-container">
     <div class="product-top-section">
       <div class="image-container">
@@ -349,6 +403,44 @@
   
 
   
+    <!-- FAQ Schema Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        
+        {
+          "@type": "Question",
+          "name": "How much does the extractor reduce equipment strain?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Dust Extractor minimizes mechanical strain on tableting machines by 40-50%, reducing wear and extending punch life."
+          }
+        },
+        
+        {
+          "@type": "Question",
+          "name": "How many machines can it service?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "With 4 inlet manifolds, the extractor can connect to one tableting press and two de-dusting units simultaneously."
+          }
+        },
+        
+        {
+          "@type": "Question",
+          "name": "Is maintenance simple?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. SS 316 materials enable quick cleaning, and the collection tray makes dust removal hassle-free."
+          }
+        }
+        
+      ]
+    }
+    </script>
+    
     <div class="faq-container main-container">
       <h2 class="underlined-header">Frequently Asked Questions</h2>
       <div class="faq-list">

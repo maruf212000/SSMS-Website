@@ -232,20 +232,74 @@
     </script>
   </div>
 </div>
-    <div class="pt-wrapper" style="background: url('../assets/img/about-bg.jpg') center center/cover no-repeat local;">
+    <!-- Product Schema Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "De-Duster",
+  "description": "The De-Duster removes tablet dust with precision vibratory action, engineered for efficient pharmaceutical processing with minimal energy consumption.",
+  "image": "../assets/img/Products/De_Duster.png",
+  "brand": {
+    "@type": "Brand",
+    "name": "SSMS Engineers"
+  },
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "SSMS Engineers",
+    "url": "..",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "IN"
+    }
+  },
+  "category": "Pharmaceutical Equipment",
+  "offers": {
+    "@type": "Offer",
+    "availability": "https://schema.org/InStock",
+    "priceCurrency": "INR",
+    "seller": {
+      "@type": "Organization",
+      "name": "SSMS Engineers"
+    },
+    "priceValidUntil": "2027-01-23"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "25",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+}
+</script>
+
+<div class="pt-wrapper" style="background: url('../assets/img/about-bg.jpg') center center/cover no-repeat local;">
     <div class="pt-container main-container">
+        
         
         <h2>De-Duster</h2>
         <p>
             
-                <a href="/home">home</a> > 
+                
+                    <a href="/">Home</a>
+                
+                 > 
             
-                <a href="/products">products</a> > 
+                
+                    <a href="/products">Products</a>
+                
+                 > 
             
-            <span>De-Duster</span>
+                
+                    <span>De-Duster</span>
+                
+                
+            
         </p>
     </div>
 </div>
+
   <div class="product-desc-container main-container">
     <div class="product-top-section">
       <div class="image-container">
@@ -364,6 +418,44 @@
   
 
   
+    <!-- FAQ Schema Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        
+        {
+          "@type": "Question",
+          "name": "How much dust can the de-duster remove?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The De-Duster removes 98%+ of tablet dust in a single pass with elevating bottom-to-top motion."
+          }
+        },
+        
+        {
+          "@type": "Question",
+          "name": "How much power does it consume?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The De-Duster has very low electrical power requirements, with VFD control optimizing energy consumption, saving 20-30% vs. traditional systems."
+          }
+        },
+        
+        {
+          "@type": "Question",
+          "name": "How maintenance-free is it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nearly maintenance-free design with minimal moving parts reduces downtime and operating costs significantly."
+          }
+        }
+        
+      ]
+    }
+    </script>
+    
     <div class="faq-container main-container">
       <h2 class="underlined-header">Frequently Asked Questions</h2>
       <div class="faq-list">

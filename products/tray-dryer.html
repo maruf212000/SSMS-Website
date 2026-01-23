@@ -232,20 +232,74 @@
     </script>
   </div>
 </div>
-    <div class="pt-wrapper" style="background: url('../assets/img/about-bg.jpg') center center/cover no-repeat local;">
+    <!-- Product Schema Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "Tray Dryer",
+  "description": "The Tray Dryer provides reliable batch drying with precise temperature control and multi-tray capacity for efficient pharmaceutical processing.",
+  "image": "../assets/img/Products/tray-dryer.png",
+  "brand": {
+    "@type": "Brand",
+    "name": "SSMS Engineers"
+  },
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "SSMS Engineers",
+    "url": "..",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "IN"
+    }
+  },
+  "category": "Pharmaceutical Equipment",
+  "offers": {
+    "@type": "Offer",
+    "availability": "https://schema.org/InStock",
+    "priceCurrency": "INR",
+    "seller": {
+      "@type": "Organization",
+      "name": "SSMS Engineers"
+    },
+    "priceValidUntil": "2027-01-23"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "25",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+}
+</script>
+
+<div class="pt-wrapper" style="background: url('../assets/img/about-bg.jpg') center center/cover no-repeat local;">
     <div class="pt-container main-container">
+        
         
         <h2>Tray Dryer</h2>
         <p>
             
-                <a href="/home">home</a> > 
+                
+                    <a href="/">Home</a>
+                
+                 > 
             
-                <a href="/products">products</a> > 
+                
+                    <a href="/products">Products</a>
+                
+                 > 
             
-            <span>Tray Dryer</span>
+                
+                    <span>Tray Dryer</span>
+                
+                
+            
         </p>
     </div>
 </div>
+
   <div class="product-desc-container main-container">
     <div class="product-top-section">
       <div class="image-container">
@@ -648,6 +702,44 @@
   
 
   
+    <!-- FAQ Schema Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        
+        {
+          "@type": "Question",
+          "name": "How many trays can the dryer accommodate?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Depending on the model, the dryer can accommodate 4-12 trays, allowing simultaneous drying of multiple batches."
+          }
+        },
+        
+        {
+          "@type": "Question",
+          "name": "What temperature range is suitable?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Tray Dryer operates from 40-85°C, suitable for heat-sensitive pharmaceutical products."
+          }
+        },
+        
+        {
+          "@type": "Question",
+          "name": "How long does a typical drying cycle take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Drying time varies based on product type and moisture content, typically 2-6 hours."
+          }
+        }
+        
+      ]
+    }
+    </script>
+    
     <div class="faq-container main-container">
       <h2 class="underlined-header">Frequently Asked Questions</h2>
       <div class="faq-list">

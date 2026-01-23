@@ -232,20 +232,74 @@
     </script>
   </div>
 </div>
-    <div class="pt-wrapper" style="background: url('../assets/img/about-bg.jpg') center center/cover no-repeat local;">
+    <!-- Product Schema Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "Co Mill",
+  "description": "The Co Mill delivers versatile grinding with interchangeable conical or knife-edge impeller options, engineered for precision dry and wet material processing with seamless blender integration and variable speed control from 100-2880 RPM.",
+  "image": "../assets/img/Products/co_mill.jpg",
+  "brand": {
+    "@type": "Brand",
+    "name": "SSMS Engineers"
+  },
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "SSMS Engineers",
+    "url": "..",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "IN"
+    }
+  },
+  "category": "Pharmaceutical Equipment",
+  "offers": {
+    "@type": "Offer",
+    "availability": "https://schema.org/InStock",
+    "priceCurrency": "INR",
+    "seller": {
+      "@type": "Organization",
+      "name": "SSMS Engineers"
+    },
+    "priceValidUntil": "2027-01-23"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "25",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+}
+</script>
+
+<div class="pt-wrapper" style="background: url('../assets/img/about-bg.jpg') center center/cover no-repeat local;">
     <div class="pt-container main-container">
+        
         
         <h2>Co Mill</h2>
         <p>
             
-                <a href="/home">home</a> > 
+                
+                    <a href="/">Home</a>
+                
+                 > 
             
-                <a href="/products">products</a> > 
+                
+                    <a href="/products">Products</a>
+                
+                 > 
             
-            <span>Co Mill</span>
+                
+                    <span>Co Mill</span>
+                
+                
+            
         </p>
     </div>
 </div>
+
   <div class="product-desc-container main-container">
     <div class="product-top-section">
       <div class="image-container">
@@ -803,6 +857,44 @@
   
 
   
+    <!-- FAQ Schema Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        
+        {
+          "@type": "Question",
+          "name": "What is the difference between Conical and Knife Edge impellers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Conical Impeller provides gentle, uniform grinding suitable for heat-sensitive and delicate materials, achieving ±5% particle size uniformity. The Knife Edge Impeller offers aggressive size reduction for harder materials and faster processing. Both can be used in the same mill by simple impeller replacement."
+          }
+        },
+        
+        {
+          "@type": "Question",
+          "name": "How does direct motor connection eliminate contamination?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "By connecting the impeller directly to the motor shaft without belt drive, the Co Mill eliminates black wear particles that can contaminate products. This ensures 100% product purity and eliminates the need for additional filtration or re-processing."
+          }
+        },
+        
+        {
+          "@type": "Question",
+          "name": "What is the advantage of 100-2880 RPM variable speed control?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The wide RPM range with VFD control enables optimization for 30+ different formulation types. Low speeds (100-500 RPM) handle delicate materials, while high speeds (1500-2880 RPM) provide aggressive grinding for harder materials. This single mill replaces multiple equipment, reducing capital costs by 40-50%."
+          }
+        }
+        
+      ]
+    }
+    </script>
+    
     <div class="faq-container main-container">
       <h2 class="underlined-header">Frequently Asked Questions</h2>
       <div class="faq-list">
