@@ -2333,7 +2333,8 @@
                     </div>
                     <div class="events-grid">
                         
-                            <div class="event-card">
+                            <div class="event-card" data-start-date="2026-04-09"
+                                data-end-date="2026-04-11">
                                 <div class="event-card-top">
                                     <div class="event-status-badge event-status-upcoming">
                                         
@@ -2437,6 +2438,49 @@
                     </div>
                 </div>
             </div>
+
+            <script>
+                (function () {
+                    function checkEvents() {
+                        var section = document.querySelector('.events-outer-container');
+                        if (!section) return;
+                        var cards = section.querySelectorAll('.event-card');
+                        var visibleCount = 0;
+                        var today = new Date();
+                        today.setHours(0, 0, 0, 0);
+
+                        cards.forEach(function (card) {
+                            var endDate = new Date(card.getAttribute('data-end-date') + 'T23:59:59');
+                            var startDate = new Date(card.getAttribute('data-start-date') + 'T00:00:00');
+
+                            if (endDate < today) {
+                                // Event is past — hide it
+                                card.style.display = 'none';
+                            } else {
+                                visibleCount++;
+                                // Update status badge
+                                var badge = card.querySelector('.event-status-badge');
+                                if (badge) {
+                                    if (startDate <= today && endDate >= today) {
+                                        badge.className = 'event-status-badge event-status-live';
+                                        badge.innerHTML = '<span class="status-dot"></span> LIVE NOW';
+                                    } else {
+                                        badge.className = 'event-status-badge event-status-upcoming';
+                                        badge.innerHTML = '<span class="status-dot"></span> UPCOMING';
+                                    }
+                                }
+                            }
+                        });
+
+                        // Hide entire section if no visible events
+                        if (visibleCount === 0) {
+                            section.style.display = 'none';
+                            // Also hide Schema.org scripts for past events
+                        }
+                    }
+                    checkEvents();
+                })();
+            </script>
             
             <div class="clients main-container" id="clients">
     <div class="swiper-container clients-container">
