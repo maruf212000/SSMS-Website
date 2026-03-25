@@ -1,0 +1,340 @@
+/* ===== Events Section ===== */
+
+.events-outer-container {
+    padding: 60px 0;
+    position: relative;
+}
+
+.events-container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Header */
+.events-header {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.events-header .underlined-header {
+    color: var(--primary-bg-color);
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.events-header .underlined-header::before {
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: var(--primary-color);
+}
+
+.events-subtitle {
+    color: var(--secondary-text-color);
+    font-size: 1rem;
+    margin-top: 10px;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Events Grid */
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 24px;
+}
+
+/* Event Card */
+.event-card {
+    background: white;
+    border: 1px solid #e2e5f1;
+    border-radius: 14px;
+    padding: 24px 28px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 12px rgba(10, 29, 77, 0.06);
+}
+
+.event-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 36px rgba(10, 29, 77, 0.1);
+}
+
+/* Card Top Row */
+.event-card-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+/* Status Badge */
+.event-status-badge {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.65rem;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1.2px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.event-status-live {
+    background: #ecfdf5;
+    color: #059669;
+    border: 1px solid #a7f3d0;
+}
+
+.event-status-upcoming {
+    background: #eff6ff;
+    color: var(--primary-color);
+    border: 1px solid #bfdbfe;
+}
+
+.status-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.event-status-live .status-dot {
+    background: #10b981;
+    animation: pulse-dot 1.5s ease-in-out infinite;
+}
+
+.event-status-upcoming .status-dot {
+    background: var(--primary-color);
+}
+
+@keyframes pulse-dot {
+
+    0%,
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.4;
+        transform: scale(1.5);
+    }
+}
+
+/* Edition Tag */
+.event-edition {
+    display: inline-block;
+    background: #f0f1f8;
+    color: var(--primary-bg-color);
+    font-size: 0.68rem;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+
+/* Event Name & Description */
+.event-name {
+    color: var(--primary-bg-color);
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+    line-height: 1.3;
+}
+
+.event-description {
+    color: var(--secondary-text-color);
+    font-size: 0.88rem;
+    line-height: 1.6;
+    margin: 0 0 18px 0;
+}
+
+/* Event Details */
+.event-details {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.event-detail-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.event-detail-icon {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    background: #eff6ff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+}
+
+.event-detail-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.event-detail-label {
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #9ca3af;
+    font-family: "Montserrat", sans-serif;
+}
+
+.event-detail-value {
+    color: var(--primary-bg-color);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Stall Info */
+.event-stall-info {
+    margin-top: 2px;
+}
+
+.event-stall-badge {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    background: linear-gradient(135deg, #eff6ff 0%, #f0f1f8 100%);
+    border: 1px solid #e2e5f1;
+    border-radius: 10px;
+    padding: 12px 20px;
+    width: fit-content;
+}
+
+.stall-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    min-width: 70px;
+}
+
+.stall-label {
+    font-size: 0.62rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #9ca3af;
+    font-family: "Montserrat", sans-serif;
+}
+
+.stall-value {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    font-family: "Montserrat", sans-serif;
+}
+
+.stall-divider {
+    width: 1px;
+    height: 32px;
+    background: #d1d5db;
+    margin: 0 16px;
+}
+
+/* Concurrent Events */
+.event-concurrent {
+    padding-top: 2px;
+}
+
+.concurrent-label {
+    display: block;
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #9ca3af;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 8px;
+}
+
+.concurrent-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.concurrent-tag {
+    background: #f7f8fc;
+    border: 1px solid #e2e5f1;
+    color: var(--primary-bg-color);
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 4px 10px;
+    border-radius: 6px;
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.concurrent-tag:hover {
+    background: #eff6ff;
+    border-color: #bfdbfe;
+}
+
+/* ===== Responsive ===== */
+
+@media screen and (max-width: 768px) {
+    .events-outer-container {
+        padding: 40px 0;
+    }
+
+    .events-header {
+        margin-bottom: 24px;
+    }
+
+    .events-header .underlined-header {
+        font-size: 1.4rem;
+    }
+
+    .events-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .event-card {
+        padding: 20px;
+    }
+
+    .event-name {
+        font-size: 1.05rem;
+    }
+
+    .event-stall-badge {
+        padding: 10px 14px;
+    }
+
+    .stall-value {
+        font-size: 1.1rem;
+    }
+
+    .stall-divider {
+        margin: 0 12px;
+        height: 28px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .event-card {
+        padding: 16px;
+    }
+
+    .event-stall-badge {
+        width: 100%;
+        justify-content: center;
+    }
+}

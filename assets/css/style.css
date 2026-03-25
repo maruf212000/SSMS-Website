@@ -5,6 +5,7 @@
 @import "product-slider.css";
 @import "stats-info.css";
 @import "testimonials.css";
+@import "events-section.css";
 
 html {
   margin: 0;
@@ -44,7 +45,7 @@ body {
   padding-bottom: 0.5em;
   padding-right: 0.5em;
   position: relative;
-  display:inline-block;
+  display: inline-block;
   font-weight: bold;
 }
 
