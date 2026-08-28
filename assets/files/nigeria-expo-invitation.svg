@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="794" height="1123" viewBox="0 0 794 1123" role="img" aria-label="SSMS Engineers invitation to the 8th Nigeria Pharma Manufacturers' Expo and Nigeria Lab Expo, Lagos, 28-29 September 2026, Hall 2 Booth 238">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b204f"/>
+      <stop offset="0.55" stop-color="#0a1c46"/>
+      <stop offset="1" stop-color="#081737"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="1" r="0.8">
+      <stop offset="0" stop-color="#3fae2a" stop-opacity="0.16"/>
+      <stop offset="0.6" stop-color="#3fae2a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="794" height="1123" fill="url(#bg)"/>
+  <rect width="794" height="1123" fill="url(#glow)"/>
+  <rect x="26" y="26" width="742" height="1071" rx="10" fill="none" stroke="#ffffff" stroke-opacity="0.14"/>
+
+  <g fill="#ffffff" opacity="0.08">
+    <rect x="60" y="900" width="46" height="223"/>
+    <rect x="120" y="850" width="34" height="273"/>
+    <rect x="170" y="930" width="52" height="193"/>
+    <rect x="240" y="810" width="30" height="313"/>
+    <rect x="300" y="880" width="60" height="243"/>
+    <rect x="380" y="770" width="26" height="353"/>
+    <rect x="386" y="740" width="6" height="30"/>
+    <rect x="430" y="900" width="70" height="223"/>
+    <rect x="520" y="850" width="30" height="273"/>
+    <rect x="566" y="920" width="66" height="203"/>
+    <rect x="650" y="860" width="40" height="263"/>
+    <rect x="704" y="910" width="40" height="213"/>
+  </g>
+
+  <g font-family="'Montserrat','Helvetica Neue',Arial,sans-serif" text-anchor="middle">
+    <text x="397" y="150" font-size="44" font-weight="900" letter-spacing="4">
+      <tspan fill="#3fae2a">SSMS</tspan>
+    </text>
+    <text x="397" y="172" font-size="11" font-weight="600" letter-spacing="3" fill="#9fb4dd">SYNERGY &#183; SUPPORT &#183; MACHINES &#183; SPARES</text>
+
+    <text x="397" y="240" font-size="34" font-weight="800" letter-spacing="5" fill="#ffffff">SSMS ENGINEERS</text>
+    <text x="397" y="286" font-size="22" font-weight="600" font-style="italic" fill="#4fc23a">We cordially invite you to visit</text>
+
+    <text x="397" y="344" font-size="13" font-weight="700" letter-spacing="3" fill="#9fb4dd">8TH EDITION</text>
+    <text x="397" y="392" font-size="30" font-weight="900" fill="#ffffff">Nigeria Pharma Manufacturers&#8217; Expo</text>
+    <text x="397" y="430" font-size="30" font-weight="900" fill="#ffffff"><tspan fill="#4fc23a">&amp;</tspan> Nigeria Lab Expo</text>
+
+    <text x="397" y="512" font-size="40" font-weight="800" fill="#ffffff">September 28 &amp; 29, 2026</text>
+    <rect x="222" y="528" width="350" height="3" fill="#3fae2a"/>
+
+    <text x="397" y="596" font-size="24" font-weight="700" font-style="italic" fill="#4fc23a">Meet us at</text>
+
+    <g transform="translate(197,624)">
+      <rect x="0" y="0" width="400" height="132" rx="14" fill="#ffffff" fill-opacity="0.06" stroke="#ffffff" stroke-opacity="0.16"/>
+      <text x="110" y="42" font-size="13" font-weight="600" letter-spacing="2" fill="#9fb4dd">HALL NO.</text>
+      <text x="110" y="100" font-size="50" font-weight="900" fill="#ffffff">2</text>
+      <rect x="200" y="30" width="1" height="72" fill="#ffffff" fill-opacity="0.22"/>
+      <text x="290" y="42" font-size="13" font-weight="600" letter-spacing="2" fill="#9fb4dd">BOOTH NO.</text>
+      <text x="290" y="100" font-size="50" font-weight="900" fill="#ffffff">238</text>
+    </g>
+
+    <rect x="120" y="810" width="554" height="1" fill="#ffffff" fill-opacity="0.16"/>
+
+    <text x="397" y="860" font-size="16" font-weight="600" fill="#ffffff">Harbour Point, 4 Wilmot Point Road</text>
+    <text x="397" y="886" font-size="14" fill="#9fb4dd">Victoria Island, Lagos, Nigeria</text>
+    <text x="397" y="936" font-size="16" font-weight="600" fill="#ffffff">10:00 am &#8211; 5:00 pm</text>
+    <text x="397" y="962" font-size="14" fill="#9fb4dd">Entry for 18 years and above</text>
+
+    <text x="397" y="1052" font-size="14" fill="#c9d5ee">info@ssmsengineers.com &#160;&#160;&#183;&#160;&#160; www.ssmsengineers.com</text>
+  </g>
+</svg>

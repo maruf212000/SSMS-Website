@@ -160,6 +160,19 @@
     transform-origin: middle;
 }
 
+/* current-page indicator */
+.nav>.nav-links>a.is-active {
+    color: var(--primary-color);
+}
+
+.nav>.nav-links>a.is-active .hover-underline-animation::after {
+    transform: scaleX(1);
+}
+
+.menubar-main-item a.is-active {
+    color: var(--primary-color);
+}
+
 .nav>.nav-links>a>.last {
     padding-right: 0px;
 }

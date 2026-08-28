@@ -1,9 +1,9 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "SSMS Engineers",
+    "short_name": "SSMS Engineers",
     "icons": [
         {
-            "src": "/android-chrome-144x144.png",
+            "src": "/assets/icon/android-chrome-144x144.png",
             "sizes": "144x144",
             "type": "image/png"
         }

@@ -1,7 +1,425 @@
-@import "features.css";
-@import "testimonials.css";
-@import "headline-section.css";
-@import "page-title.css";
+
+/* inlined: features.css */
+.features-container {
+    padding-bottom: 50px;
+}
+
+.about-features {
+    grid-column: span 1;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border: 0.5px solid var(--border-color);
+    margin-top: 30px;
+}
+
+.about-feature-item {
+    border: 0.5px solid var(--border-color);
+    padding: 32px 16px;
+    background-color: rgb(249, 251, 253);
+}
+
+.about-feature-item-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-feature-item:hover .about-feature-item-content {
+    transform: scale(0.95);
+}
+
+.about-feature-item img {
+    width: 84px;
+    height: 84px;
+}
+
+.about-feature-item h3 {
+    text-align: center;
+}
+
+.about-feature-item p {
+    color: var(--secondary-text-color);
+    line-height: 1.5em;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 0 1em;
+    margin: 0;
+}
+
+@media screen and (max-width:800px) {
+    .about-features {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width:512px) {
+    .about-features {
+        grid-template-columns: auto;
+    }
+}
+/* end features.css */
+
+
+/* inlined: testimonials.css */
+.testimonials-container {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.testimonials-container h2 {
+  font-size: 1.5rem;
+  line-height: 1.25em;
+  margin: 0.13em 0 0.5em 0;
+  padding-bottom: 0.5em;
+  padding-right: 0.5em;
+  position: relative;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.testimonials-container h2::before {
+  content: "";
+  background-color: var(--primary-color);
+  width: 32px;
+  height: 5px;
+  border-radius: 2.5px;
+  position: absolute;
+  left: calc(50% - 25px);
+  bottom: 0;
+}
+
+.testimonials-container .subheadline {
+  color: var(--secondary-text-color);
+  font-family: "Hind", sans-serif;
+  font-size: 1rem;
+  line-height: 1.8em;
+  margin: 0 auto 15px auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .testimonials-container .subheadline {
+    padding: 0 45px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .testimonials-container .subheadline {
+    width: 66.66%;
+  }
+}
+
+.tt-swiper-outer-container {
+  display: flex;
+  align-items: center;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.small-device-tt-btns {
+  display: none;
+}
+
+.testimonials-swiper-container {
+  width: 80%;
+}
+
+.testimonials-slide-container {
+  /* height: 100% !important; */
+  position: relative; /* anchor the quote badge to this card's corner */
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+}
+
+.testimonials-slide-container::after {
+  background: var(--primary-color) url("../img/icons/doubleqoute.png") no-repeat
+    center center;
+  content: "";
+  width: 58px;
+  height: 52px;
+  position: absolute;
+  right: 0;
+  top: -2px;
+  border-radius: 5px;
+}
+
+.tt-swiper-button-prev,
+.tt-swiper-button-next {
+  background-image: none;
+  width: 36px;
+  height: 36px;
+}
+
+.tt-swiper-button-next img {
+  width: 36px;
+}
+
+.tt-swiper-button-prev svg {
+  width: 36px;
+  transform: rotate(180deg);
+}
+
+.tt-swiper-button-next svg:hover {
+  fill: var(--primary-color);
+}
+
+.tt-swiper-button-prev svg:hover {
+  fill: var(--primary-color);
+}
+
+.slider-inner-wrapper {
+  padding: 65px 35px 35px;
+}
+
+.slider-inner-wrapper .feedback {
+  font-family: "Hind", sans-serif;
+  font-size: 1rem;
+  line-height: 1.8rem;
+  color: var(--secondary-text-color);
+  text-align: justify;
+}
+
+.slider-inner-wrapper .person-details {
+  position: relative;
+  bottom: 0%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.slider-inner-wrapper .person-details .person-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.slider-inner-wrapper .person-details .person-avatar {
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  object-fit: cover;
+  background: var(--border-color);
+}
+
+.slider-inner-wrapper .person-details h3 {
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: var(--primary-bg-color);
+  line-height: 1.1;
+  margin: 0;
+}
+
+.slider-inner-wrapper .person-details p {
+  font-size: 0.933333333rem;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+  line-height: 1.8em;
+  margin: 0;
+  text-align: left;
+}
+
+@media screen and (max-width: 800px) {
+  .tt-swiper-outer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .testimonials-swiper-container {
+    width: 100%;
+  }
+
+  .tt-swiper-button-next:not(.small-device-tt-btns > .tt-swiper-button-next) {
+    display: none;
+  }
+
+  .tt-swiper-button-prev:not(.small-device-tt-btns > .tt-swiper-button-prev) {
+    display: none;
+  }
+
+  .small-device-tt-btns {
+    padding-top: 8px;
+    display: block;
+    display: flex;
+  }
+
+  .slider-inner-wrapper .feedback {
+    font-size: 0.8rem;
+  }
+
+  .slider-inner-wrapper {
+    padding: 40px 15px 15px;
+  }
+
+  .slider-inner-wrapper .person-details h3 {
+    font-size: 1rem;
+  }
+
+  .slider-inner-wrapper .person-details p {
+    font-size: 0.8rem;
+  }
+
+  .slider-inner-wrapper .person-details .person-avatar {
+    width: 48px;
+    height: 48px;
+    font-size: 1.1rem;
+  }
+}
+
+/* end testimonials.css */
+
+
+/* inlined: headline-section.css */
+.headline-outer-container {
+    background: linear-gradient(rgba(10, 29, 77, 0.85), rgba(10, 29, 77, 0.85)), url('../img/headline-bg.png');
+    background-size: cover;
+    align-content: center;
+}
+
+.headline-outer-container h1 {
+    font-size: 1.8rem;
+    line-height: 1.3em;
+    color: white;
+    margin-bottom: 1.33em;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+
+.headline-outer-container h1 span {
+    color: var(--primary-color);
+}
+
+.headline-outer-container a {
+    text-decoration: none;
+}
+
+.headline-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.headline-btn {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px 28px;
+    border-radius: 4px;
+    border: 2px solid var(--primary-color);
+    background-color: transparent;
+    color: white;
+    width: fit-content;
+}
+
+.headline-btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+@media screen and (max-width: 767px) {
+    .headline-outer-container h1 {
+        font-size: 1.2rem;
+    }
+}
+/* end headline-section.css */
+
+
+/* inlined: page-title.css */
+/* ===== Shared page header (About, Products, Product, Resources, Contact) ===== */
+
+.page-header {
+  position: relative;
+  background:
+    linear-gradient(var(--primary-color), var(--primary-color)) top left / 100% 3px no-repeat,
+    linear-gradient(180deg, #ffffff 0%, #f5f7fc 100%);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.page-header-inner {
+  position: relative;
+  z-index: 1;
+  padding: 44px 0 48px;
+  text-align: left;
+}
+
+/* Breadcrumb */
+.page-crumbs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  color: var(--secondary-text-color);
+}
+
+.page-crumbs a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color .2s ease;
+}
+
+.page-crumbs a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.page-crumbs [aria-current="page"] {
+  color: var(--secondary-text-color);
+}
+
+.page-crumbs-sep {
+  color: var(--border-color);
+}
+
+/* Title */
+.page-header h1 {
+  margin: 0;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1.9rem, 1.4rem + 1.9vw, 2.6rem);
+  font-weight: 800;
+  line-height: 1.12;
+  color: var(--primary-bg-color);
+}
+
+.page-header h1::after {
+  content: "";
+  display: block;
+  width: 58px;
+  height: 3px;
+  margin-top: 18px;
+  border-radius: 2px;
+  background: var(--primary-color);
+}
+
+/* Optional subtitle */
+.page-header-sub {
+  max-width: 640px;
+  margin: 18px 0 0;
+  font-family: "Hind", sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--secondary-text-color);
+}
+
+@media screen and (max-width: 700px) {
+  .page-header-inner {
+    padding: 32px 0 36px;
+  }
+  .page-header h1 {
+    font-size: 1.9rem;
+  }
+  .page-header-sub {
+    font-size: 1rem;
+  }
+}
+
+/* end page-title.css */
+
 
 .intro-container {
     padding: 50px 0;

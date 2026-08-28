@@ -41,24 +41,57 @@
 /* Events Grid */
 .events-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    grid-template-columns: 1fr;
     gap: 24px;
 }
 
-/* Event Card */
+/* Event Card — horizontal, full width */
 .event-card {
     background: white;
     border: 1px solid #e2e5f1;
     border-radius: 14px;
-    padding: 24px 28px;
+    padding: 30px 32px;
     position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 2px 12px rgba(10, 29, 77, 0.06);
+
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.event-card-main {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.event-card > .event-details {
+    flex: 0 0 340px;
+    align-self: stretch;
+    justify-content: center;
+    gap: 18px;
+    margin-bottom: 0;
+    background: #f7f8fc;
+    border: 1px solid #e9ebf4;
+    border-radius: 12px;
+    padding: 24px 26px;
 }
 
 .event-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 12px 36px rgba(10, 29, 77, 0.1);
+}
+
+.event-card-main .event-name {
+    margin-bottom: 8px;
+}
+
+.event-card-main .event-description {
+    margin-bottom: 0;
+}
+
+.event-card-main .event-concurrent {
+    margin-top: 18px;
 }
 
 /* Card Top Row */
@@ -288,6 +321,17 @@
 }
 
 /* ===== Responsive ===== */
+
+/* Below this width the horizontal card is cramped — stack it */
+@media screen and (max-width: 860px) {
+    .event-card {
+        display: block;
+    }
+
+    .event-card > .event-details {
+        margin-top: 22px;
+    }
+}
 
 @media screen and (max-width: 768px) {
     .events-outer-container {
