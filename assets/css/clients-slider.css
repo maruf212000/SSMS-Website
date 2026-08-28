@@ -42,8 +42,12 @@
 }
 
 .clients-slide-container img {
-    max-height: 90%;
-    max-width: 90%;
+    /* fixed slot + contain: every logo keeps its own aspect ratio and is
+       scaled to the same visual footprint, regardless of source dimensions */
+    width: 82%;
+    height: 56%;
+    object-fit: contain;
+    object-position: center;
     position: absolute;
     top: 50%;
     left: 50%;
