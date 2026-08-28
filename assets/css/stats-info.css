@@ -23,12 +23,13 @@
     border-right: 0;
 }
 
-.stats-item-container h1 {
+.stats-item-container .stats-anim-num {
     font-family: "Montserrat", sans-serif;
     font-size: 4rem;
     font-weight: bold;
     line-height: 1.1;
     margin: 0;
+    color: #000;
 }
 
 .stats-item-container p {

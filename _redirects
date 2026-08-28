@@ -1,0 +1,10 @@
+# Netlify redirects — served from the publish root.
+# Canonical host: force apex -> www (keep in sync with canonical URLs / sitemap).
+http://ssmsengineers.com/*     https://www.ssmsengineers.com/:splat   301!
+https://ssmsengineers.com/*    https://www.ssmsengineers.com/:splat   301!
+http://www.ssmsengineers.com/* https://www.ssmsengineers.com/:splat   301!
+
+# Legacy / trailing-slash tidy-ups can be added here as they come up.
+
+# SPA-style fallback is NOT wanted (this is a static multi-page site);
+# unmatched paths fall through to Netlify's automatic 404 -> /404.html

@@ -1,0 +1,380 @@
+
+/* inlined: page-title.css */
+/* ===== Shared page header (About, Products, Product, Resources, Contact) ===== */
+
+.page-header {
+  position: relative;
+  background:
+    linear-gradient(var(--primary-color), var(--primary-color)) top left / 100% 3px no-repeat,
+    linear-gradient(180deg, #ffffff 0%, #f5f7fc 100%);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.page-header-inner {
+  position: relative;
+  z-index: 1;
+  padding: 44px 0 48px;
+  text-align: left;
+}
+
+/* Breadcrumb */
+.page-crumbs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  color: var(--secondary-text-color);
+}
+
+.page-crumbs a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color .2s ease;
+}
+
+.page-crumbs a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.page-crumbs [aria-current="page"] {
+  color: var(--secondary-text-color);
+}
+
+.page-crumbs-sep {
+  color: var(--border-color);
+}
+
+/* Title */
+.page-header h1 {
+  margin: 0;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1.9rem, 1.4rem + 1.9vw, 2.6rem);
+  font-weight: 800;
+  line-height: 1.12;
+  color: var(--primary-bg-color);
+}
+
+.page-header h1::after {
+  content: "";
+  display: block;
+  width: 58px;
+  height: 3px;
+  margin-top: 18px;
+  border-radius: 2px;
+  background: var(--primary-color);
+}
+
+/* Optional subtitle */
+.page-header-sub {
+  max-width: 640px;
+  margin: 18px 0 0;
+  font-family: "Hind", sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--secondary-text-color);
+}
+
+@media screen and (max-width: 700px) {
+  .page-header-inner {
+    padding: 32px 0 36px;
+  }
+  .page-header h1 {
+    font-size: 1.9rem;
+  }
+  .page-header-sub {
+    font-size: 1rem;
+  }
+}
+
+/* end page-title.css */
+
+
+/* ===== Single article ===== */
+/* The article header reuses the shared .page-header component (see page-title.css)
+   so it matches About / Products / Resources. Only the article-specific bits
+   (category chip, byline) are styled here. */
+.article-shell {
+    max-width: 720px;
+    padding: 40px 0 32px;
+}
+
+.page-header .article-cat {
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    background: #eef2fd;
+    border: 1px solid #d7e0fb;
+    border-radius: 4px;
+    padding: 4px 10px;
+    margin-bottom: 14px;
+}
+
+.page-header .article-byline {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 9px;
+    margin-top: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.85rem;
+    color: var(--secondary-text-color);
+}
+
+.article-byline .dot {
+    color: #c7ccd8;
+}
+
+/* Body typography (rendered markdown) */
+.article-body {
+    font-family: "Hind", "Roboto", sans-serif;
+    font-size: 1.08rem;
+    line-height: 1.8;
+    color: #2b2f38;
+}
+
+.article-body > *:first-child {
+    margin-top: 0;
+}
+
+.article-body > p:first-of-type {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: #1e222b;
+}
+
+.article-body h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.55rem;
+    font-weight: 700;
+    color: var(--primary-bg-color);
+    line-height: 1.3;
+    letter-spacing: -0.005em;
+    margin: 2.4em 0 0.7em;
+    padding-top: 0.2em;
+}
+
+.article-body h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary-bg-color);
+    margin: 1.9em 0 0.5em;
+}
+
+.article-body p {
+    margin: 0 0 1.35em;
+}
+
+.article-body a {
+    color: var(--primary-color);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 1px;
+}
+
+.article-body a:hover {
+    color: #1c3fa8;
+}
+
+.article-body ul,
+.article-body ol {
+    margin: 0 0 1.35em;
+    padding-left: 1.3em;
+}
+
+.article-body li {
+    margin: 0.4em 0;
+    padding-left: 0.2em;
+}
+
+.article-body li::marker {
+    color: var(--primary-color);
+}
+
+.article-body strong {
+    color: var(--primary-bg-color);
+    font-weight: 700;
+}
+
+.article-body blockquote {
+    margin: 1.6em 0;
+    padding: 6px 0 6px 22px;
+    border-left: 3px solid var(--primary-color);
+    color: var(--secondary-text-color);
+    font-style: italic;
+}
+
+.article-body hr {
+    border: 0;
+    border-top: 1px solid #e7e9f2;
+    margin: 2.5em 0;
+}
+
+.article-body code {
+    background: #f2f4f8;
+    border-radius: 4px;
+    padding: 2px 6px;
+    font-size: 0.88em;
+}
+
+.article-body :where(table) {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.8em 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.94rem;
+    display: block;
+    overflow-x: auto;
+}
+
+.article-body th,
+.article-body td {
+    border: 1px solid #e2e5f1;
+    padding: 11px 14px;
+    text-align: left;
+    vertical-align: top;
+    line-height: 1.5;
+}
+
+.article-body thead th {
+    background: #f4f6fb;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: var(--primary-bg-color);
+}
+
+.article-body tbody tr:nth-child(even) {
+    background: #fafbfe;
+}
+
+/* Back link */
+.article-back {
+    display: inline-block;
+    margin-top: 44px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.article-back:hover {
+    text-decoration: underline;
+}
+
+/* Related machinery — cards match the home-page product slider */
+.article-related {
+    padding: 56px 0 12px;
+}
+
+.article-related-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.article-related .product-card {
+    border: 1px solid #e2e5f1;
+    border-radius: 14px;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(10, 29, 77, 0.08);
+    overflow: hidden;
+    transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+
+.article-related .product-card > a {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    text-decoration: none;
+}
+
+.article-related .product-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(38, 86, 218, 0.35);
+    box-shadow: 0 12px 30px rgba(10, 29, 77, 0.12);
+}
+
+.article-related .product-img-container {
+    position: relative;
+    flex: 1;
+    min-height: 0;
+    width: 88%;
+    margin: 0 auto;
+    transition: transform .3s ease;
+}
+
+.article-related .product-card:hover .product-img-container {
+    transform: scale(0.92);
+}
+
+.article-related .product-img-container img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 88%;
+    max-width: 90%;
+    width: auto;
+    height: auto;
+}
+
+.article-related .product-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 48px;
+    padding: 8px 12px;
+    border-top: 1px solid #e2e5f1;
+}
+
+.article-related .product-details h3 {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    line-height: 1.25;
+    color: var(--primary-bg-color);
+}
+
+.article-related .product-bottom-border {
+    height: 4px;
+    flex-shrink: 0;
+    background: #e2e5f1;
+    transition: background-color .3s ease;
+}
+
+.article-related .product-card:hover .product-bottom-border {
+    background: var(--primary-color);
+}
+
+@media screen and (max-width: 700px) {
+    .article-shell {
+        padding-top: 28px;
+    }
+
+    .article-body {
+        font-size: 1.02rem;
+    }
+
+    .article-body > p:first-of-type {
+        font-size: 1.1rem;
+    }
+
+    .article-body h2 {
+        font-size: 1.35rem;
+    }
+}
